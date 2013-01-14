@@ -2,7 +2,11 @@
 /.CFUserTextEncoding
 /.Trash
 /.bash_history
+/.vim/.netrwhist
 /.viminfo
+/.zcompdump
+/.zsh-update
+/.zsh_history
 /Desktop
 /Documents
 /Downloads
