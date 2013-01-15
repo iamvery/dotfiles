@@ -2,6 +2,7 @@
 /.CFUserTextEncoding
 /.Trash
 /.bash_history
+/.ssh
 /.vim/.netrwhist
 /.viminfo
 /.zcompdump
