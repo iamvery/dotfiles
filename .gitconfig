@@ -1,0 +1,7 @@
+[user]
+	name = Jay Hayes
+	email = ur@iamvery.com
+[core]
+	editor = vim
+[diff]
+	external = $HOME/bin/git-diff-cmd
