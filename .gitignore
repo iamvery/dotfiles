@@ -3,14 +3,23 @@
 /.Trash
 /.adobe
 /.bash_history
+/.cache
+/.cups
 /.dropbox
 /.gem
 /.gitk
+/.guard_history
 /.ievms
+/.irb-history
 /.lesshst
+/.pgpass
+/.pry_history
+/.psql_history
 /.rvm
 /.sh_history
+/.sqlite_history
 /.ssh
+/.tmuxinator
 /.vim/.netrwhist
 /.viminfo
 /.zcompdump
@@ -21,6 +30,7 @@
 /Downloads
 /Dropbox
 /Emulation
+/GitHub
 /Library
 /Movies
 /Music
@@ -29,3 +39,4 @@
 /School
 /Sites
 /VirtualBox VMs
+/pgadmin.log
