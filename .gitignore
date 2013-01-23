@@ -21,7 +21,7 @@
 /.sqlite_history
 /.ssh
 /.tmuxinator
-/.vim/.netrwhist
+/.vim
 /.viminfo
 /.zcompdump
 /.zsh-update
