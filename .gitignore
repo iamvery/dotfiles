@@ -16,6 +16,7 @@
 /.pry_history
 /.psql_history
 /.rvm
+/.secrets
 /.sh_history
 /.sqlite_history
 /.ssh
