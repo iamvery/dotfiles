@@ -38,6 +38,8 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
+PATH=$PATH:$HOME/bin # Add user bin directory for executables
+
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 PATH=/usr/local/git/bin:$PATH # Use git from brew over Xcode's
 
