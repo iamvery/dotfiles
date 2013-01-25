@@ -21,6 +21,7 @@
 /.sqlite_history
 /.ssh
 /.tmuxinator
+/.vagrant.d
 /.vim
 /.viminfo
 /.zcompdump
