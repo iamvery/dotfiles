@@ -27,6 +27,7 @@
 /.zcompdump
 /.zsh-update
 /.zsh_history
+/Calibre Library
 /Desktop
 /Documents
 /Downloads
@@ -42,5 +43,6 @@
 /School
 /Sites
 /VirtualBox VMs
+/bin/keep-lively.sh
 /pgadmin.log
 /mm.cfg
