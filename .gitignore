@@ -12,6 +12,8 @@
 /.ievms
 /.irb-history
 /.lesshst
+/.mysql_history
+/.pgadmin_histoqueries
 /.pgpass
 /.pry_history
 /.psql_history
