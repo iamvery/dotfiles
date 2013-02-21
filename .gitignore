@@ -17,6 +17,7 @@
 /.pgpass
 /.pry_history
 /.psql_history
+/.rnd
 /.rvm
 /.secrets
 /.sh_history
