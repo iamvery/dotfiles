@@ -20,7 +20,7 @@ filetype plugin indent on
 set ttyfast
 set wildmenu
 
-set number
+set relativenumber
 set ruler
 
 set mouse=a
