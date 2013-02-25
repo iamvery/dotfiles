@@ -10,8 +10,12 @@ Bundle 'gmarik/vundle'
 " Colors
 Bundle 'chriskempson/vim-tomorrow-theme'
 
+" Syntax
+Bundle 'slim-template/vim-slim'
+
 " Navigation
 Bundle 'kien/ctrlp.vim'
+Bundle 'scrooloose/nerdtree'
 
 
 syntax enable
@@ -72,6 +76,9 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
+
+" nerdtree
+nnoremap <leader>n :NERDTree<cr>
 
 au FocusLost * :wa
 
