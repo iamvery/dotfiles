@@ -4,6 +4,7 @@
 /.adobe
 /.bash_history
 /.cache
+/.config
 /.cups
 /.dropbox
 /.gem
@@ -13,6 +14,7 @@
 /.irb-history
 /.lesshst
 /.mysql_history
+/.npm
 /.pgadmin_histoqueries
 /.pgpass
 /.pry_history
@@ -48,5 +50,7 @@
 /Sites
 /VirtualBox VMs
 /bin/keep-lively.sh
+/bin/reattach-to-user-namespace
+/bin/subl
 /pgadmin.log
 /mm.cfg
