@@ -1,18 +1,21 @@
 *.DS_Store
 /.CFUserTextEncoding
 /.Trash
+/.Xauthority
 /.adobe
 /.bash_history
 /.cache
 /.config
 /.cups
 /.dropbox
+/.fontconfig
 /.gem
 /.gitk
 /.guard_history
 /.ievms
 /.irb-history
 /.lesshst
+/.mitmproxy
 /.mysql_history
 /.npm
 /.pgadmin_histoqueries
@@ -29,6 +32,8 @@
 /.vagrant.d
 /.vim
 /.viminfo
+/.wireshark-etc
+/.wireshark
 /.zcompdump
 /.zsh-update
 /.zsh_history
@@ -52,5 +57,6 @@
 /bin/keep-lively.sh
 /bin/reattach-to-user-namespace
 /bin/subl
+/paros
 /pgadmin.log
 /mm.cfg
