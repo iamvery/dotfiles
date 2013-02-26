@@ -23,6 +23,9 @@
 	pom = push origin master
 	b = branch
 	dh1 = diff HEAD~1
+	ti = update-index --assume-unchanged
+	nti = update-index --no-assume-unchanged
+	pop = stash pop
 
 	# Fancy logging.
 	#   h = head
