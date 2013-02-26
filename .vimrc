@@ -17,6 +17,9 @@ Bundle 'slim-template/vim-slim'
 Bundle 'kien/ctrlp.vim'
 Bundle 'scrooloose/nerdtree'
 
+" Utilties
+Bundle 'mileszs/ack.vim'
+
 
 syntax enable
 filetype plugin indent on
