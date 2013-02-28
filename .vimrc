@@ -81,7 +81,7 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
 " nerdtree
-nnoremap <leader>n :NERDTree<cr>
+nnoremap <leader>n :NERDTree<cr><cr>
 
 au FocusLost * :wa
 
