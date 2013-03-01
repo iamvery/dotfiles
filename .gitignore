@@ -30,6 +30,7 @@
 /.sqlite_history
 /.ssh
 /.subversion
+/.the-stable
 /.tmuxinator
 /.vagrant.d
 /.vim
@@ -58,6 +59,7 @@
 /VirtualBox VMs
 /bin/keep-lively.sh
 /bin/reattach-to-user-namespace
+/bin/the-stable
 /bin/subl
 /paros
 /pgadmin.log
