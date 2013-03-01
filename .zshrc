@@ -12,6 +12,7 @@ ZSH_THEME="wezm"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias be="nocorrect bundle exec"
 alias pair="tmux -S /var/tmux/pairing"
+alias slog="the-stable log"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
