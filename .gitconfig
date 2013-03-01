@@ -8,6 +8,8 @@
 	ui = auto
 	diff = auto
 	status = auto
+[push]
+	default = current
 [alias]
 	st = status -sb
 	ci = commit
