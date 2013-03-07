@@ -19,6 +19,7 @@
 /.mitmproxy
 /.mysql_history
 /.npm
+/.nvm
 /.pgadmin_histoqueries
 /.pgpass
 /.pry_history
