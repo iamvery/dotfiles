@@ -50,3 +50,6 @@ PATH=/usr/local/git/bin:$PATH # Use git from brew over Xcode's
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 source ~/.secrets
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
