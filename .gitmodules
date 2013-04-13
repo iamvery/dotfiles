@@ -4,3 +4,15 @@
 [submodule ".vim/bundle/vim-tomorrow-theme"]
 	path = .vim/bundle/vim-tomorrow-theme
 	url = git://github.com/chriskempson/vim-tomorrow-theme.git
+[submodule ".vim/bundle/vim-slim"]
+	path = .vim/bundle/vim-slim
+	url = git://github.com/slim-template/vim-slim.git
+[submodule ".vim/bundle/ctrlp"]
+	path = .vim/bundle/ctrlp
+	url = git://github.com/kien/ctrlp.vim.git
+[submodule ".vim/bundle/nerdtree"]
+	path = .vim/bundle/nerdtree
+	url = git://github.com/scrooloose/nerdtree.git
+[submodule ".vim/bundle/ack"]
+	path = .vim/bundle/ack
+	url = git://github.com/mileszs/ack.vim.git
