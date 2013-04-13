@@ -37,7 +37,6 @@
 /.the-stable
 /.tmuxinator
 /.vagrant.d
-/.vim
 /.viminfo
 /.wireshark-etc
 /.wireshark

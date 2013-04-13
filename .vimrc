@@ -1,25 +1,7 @@
+execute pathogen#infect()
+
 set nocompatible               " be iMproved
 filetype off                   " required!
-
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-
-" let Vundle manage Vundle. required!
-Bundle 'gmarik/vundle'
-
-" Colors
-Bundle 'chriskempson/vim-tomorrow-theme'
-
-" Syntax
-Bundle 'slim-template/vim-slim'
-
-" Navigation
-Bundle 'kien/ctrlp.vim'
-Bundle 'scrooloose/nerdtree'
-
-" Utilties
-Bundle 'mileszs/ack.vim'
-
 
 syntax enable
 filetype plugin indent on
