@@ -35,6 +35,7 @@ set ttyfast             " use a fast terminal connection
 
 set backupdir=~/.vim/_backup//             " directory for backup files
 set directory=~/.vim/_temp//               " directory for swap files
+set undodir=~/.vim/_temp//                 " directory for undo files
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*  " ignore these patters for wildcard matching
 
 
