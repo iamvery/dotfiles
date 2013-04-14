@@ -37,6 +37,8 @@
 /.the-stable
 /.tmuxinator
 /.vagrant.d
+/.vim/_backup
+/.vim/_temp
 /.viminfo
 /.wireshark-etc
 /.wireshark
@@ -67,3 +69,4 @@
 /paros
 /pgadmin.log
 /mm.cfg
+!.gitkeep
