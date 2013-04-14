@@ -1,29 +1,19 @@
 execute pathogen#infect()
 
-set nocompatible               " be iMproved
-filetype off                   " required!
-
-syntax enable
+syntax on                 " show synatx highlighting
 filetype plugin indent on
 
 set ttyfast
-set wildmenu
 
 set relativenumber
-set ruler
 
 set mouse=a
 
-set encoding=utf-8
 
 " whitespace
 set nowrap
 set list
-set backspace=indent,eol,start
 
-set listchars=""
-set listchars=tab:\ \
-set listchars+=trail:.
 
 let mapleader=","
 
@@ -32,8 +22,6 @@ nnoremap / /\v
 vnoremap / /\v
 set ignorecase
 set smartcase
-set incsearch
-set showmatch
 set hlsearch
 
 " <leader><space> clears search
@@ -72,7 +60,6 @@ set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set expandtab
-set autoindent
 
 set splitright
 set splitbelow
