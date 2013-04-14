@@ -3,34 +3,53 @@ execute pathogen#infect()
 syntax on                 " show synatx highlighting
 filetype plugin indent on
 
-set ttyfast
+au FocusLost * :wa        " autosave when file focus is lost
 
-set relativenumber
+colorscheme Tomorrow-Night
 
-set mouse=a
+let mapleader=","               " set leader key to comma
+let g:ctrlp_working_path_mode=0 " don't manage working directory
+let g:ctrlp_jump_to_buffer=0    " disable jumping to already open buffer
+
+set autoread            " automatically re-read file changed outside of vim
+set clipboard=unnamed   " use system clipboard
+set colorcolumn=80,100  " add column at 80 and 100 characters
+set expandtab           " use spaces for <Tab>
+set gdefault            " use global substitution automatically
+set hlsearch            " highlight search results
+set ignorecase          " ignore case of normal letters in search
+set list                " display unprintable characters
+set mouse=a             " enable mouse in all modes
+set noerrorbells        " don't use any bells for errors
+set novisualbell        " don't use any visual flashes for errors
+set nowrap              " do not wrap lines
+set relativenumber      " show relative line numbers
+set shiftwidth=2        " number of spaces for autoindent
+set smartcase           " ignore case when the search patter contains only lowercase letters
+set softtabstop=2       " number of spaces for <Tab> in editing
+set splitright          " split new window to right of current
+set splitbelow          " split new window below current
+set tabstop=2           " number of spaces for <Tab> in file counts
+set title               " set window title
+set ttyfast             " use a fast terminal connection
+
+set backupdir=~/.vim/_backup//             " directory for backup files
+set directory=~/.vim/_temp//               " directory for swap files
+set wildignore+=*/.git/*,*/.hg/*,*/.svn/*  " ignore these patters for wildcard matching
 
 
-" whitespace
-set nowrap
-set list
+""""""""""""""""
+"" KEY MAPPINGS
 
-
-let mapleader=","
-
-" more sane searching
+" automatically prefix searches with "\v" (very magic)
 nnoremap / /\v
 vnoremap / /\v
-set ignorecase
-set smartcase
-set hlsearch
 
 " <leader><space> clears search
 nnoremap <leader><space> :noh<cr>
 
 " <leader><leader> toggles between files
 nnoremap <leader><leader> <c-^>
-
-set colorcolumn=80,100
 
 " Disable arrow keys in command mode
 nnoremap <up> <nop>
@@ -53,49 +72,11 @@ nnoremap <C-l> <C-w>l
 " nerdtree
 nnoremap <leader>n :NERDTree<cr><cr>
 
-au FocusLost * :wa
-
-" tabs
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2
-set expandtab
-
-set splitright
-set splitbelow
-
-set noerrorbells
-set novisualbell
-
-set autoread
-
-set gdefault
-
-set title
-
-set nobackup
-set nowritebackup
-set tags=./tmptags,./tags,tags
-set backupdir=~/.vim/_backup//
-set directory=~/.vim/_temp//
-
-set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
-
 " Insert the current directory into a command-line path
 cmap <C-P> <C-R>=expand("%:p:h") . "/"
-
-" ctrlp
-let g:ctrlp_working_path_mode=0 " don't manage working directory
-let g:ctrlp_jump_to_buffer = 0  " disable jumping to already open buffer
 
 " visually select last edited/pasted text
 nmap gV `[v`]
 
 " insert hash rocket with <c-l>
 imap <c-l> <space>=><space>
-
-" use OS clipboard by default
-set clipboard=unnamed
-
-colorscheme Tomorrow-Night
-
