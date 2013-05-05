@@ -11,6 +11,7 @@
 /.dropbox
 /.fontconfig
 /.gem
+/.gist-vim
 /.gitk
 /.guard_history
 /.heroku
