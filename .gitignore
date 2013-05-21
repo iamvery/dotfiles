@@ -21,6 +21,7 @@
 /.mitmproxy
 /.mysql_history
 /.netrc
+/.node-gyp
 /.npm
 /.nvm
 /.pgadmin_histoqueries
