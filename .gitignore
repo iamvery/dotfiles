@@ -41,6 +41,7 @@
 /.vagrant.d
 /.vim/_backup
 /.vim/_temp
+/.vim/.netrwhist
 /.viminfo
 /.wireshark-etc
 /.wireshark
@@ -69,6 +70,7 @@
 /bin/reattach-to-user-namespace
 /bin/the-stable
 /bin/subl
+/exit.log
 /paros
 /pgadmin.log
 /mm.cfg
