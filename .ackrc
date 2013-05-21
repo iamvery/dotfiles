@@ -1,0 +1,15 @@
+ --type-add=ruby=.haml,.slim,.rake,.rsel,.builder,.prawn
+ --type-add=html=.html.erb,.html.haml,.html.slim
+ --type-add=js=.js,.js.erb,.coffeescript,.coffee,.js.coffee
+ --type-add=css=.sass,.scss
+ --type-set=cucumber=.feature
+ --type-set=ejs=.ejs
+ --type-set=markdown=.markdown,.md
+ --ignore-dir=log
+ --ignore-dir=rails
+ --ignore-dir=tmp
+ --ignore-dir=coverage
+ --ignore-dir=vendor
+ --sort-files
+ --color
+ --follow
