@@ -17,6 +17,7 @@
 /.heroku
 /.ievms
 /.irb-history
+/.junique
 /.lesshst
 /.mitmproxy
 /.mysql_history
@@ -57,6 +58,7 @@
 /Emulation
 /GitHub
 /Library
+/Millers Remote Suite Resources
 /Movies
 /Music
 /Pictures
