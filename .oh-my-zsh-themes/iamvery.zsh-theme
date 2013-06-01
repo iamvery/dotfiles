@@ -35,7 +35,7 @@ else
   fi
 fi
 CRUNCH_GIT_="$CRUNCH_GIT_COLOR\$(git_prompt_info) "
-CRUNCH_PROMPT="$CRUNCH_PROMPT_COLOR%# "
+CRUNCH_PROMPT="$CRUNCH_PROMPT_COLOR» "
 CRUNCH_DIR_="$CRUNCH_DIR_COLOR%~"
 
 # Put it all together!
