@@ -9,6 +9,9 @@
 # * The RVM version and gemset (omitting the 'ruby' name if it's MRI)
 # * The current directory
 #
+# The brackets may be toggled off by defining this env var in your .rvmrc:
+#   IAMVERY_SHOW_BRACKETS='no'
+#
 # Colors are at the top so you can mess with those separately if you like.
 
 IAMVERY_BRACKET_COLOR="%{$fg[white]%}"
@@ -20,20 +23,29 @@ IAMVERY_GIT_BRANCH_COLOR="%{$fg[blue]%}"
 IAMVERY_GIT_CLEAN_COLOR="%{$fg[green]%}"
 IAMVERY_GIT_DIRTY_COLOR="%{$fg[red]%}"
 
+# Our elements:
+if [[ $IAMVERY_SHOW_BRACKETS =~ '(f(alse)?|n(o)?|0)' ]]; then
+  IAMVERY_BRACKET_OPEN_=""
+  IAMVERY_BRACKET_CLOSE_=""
+else
+  IAMVERY_BRACKET_OPEN_="$IAMVERY_BRACKET_COLOR"[
+  IAMVERY_BRACKET_CLOSE_="$IAMVERY_BRACKET_COLOR"]
+fi
+
 # These Git variables are used by the oh-my-zsh git_prompt_info helper:
-ZSH_THEME_GIT_PROMPT_PREFIX="$IAMVERY_BRACKET_COLOR"["$IAMVERY_GIT_BRANCH_COLOR"
-ZSH_THEME_GIT_PROMPT_SUFFIX="$IAMVERY_BRACKET_COLOR]"
+ZSH_THEME_GIT_PROMPT_PREFIX="$IAMVERY_BRACKET_OPEN_$IAMVERY_GIT_BRANCH_COLOR"
+ZSH_THEME_GIT_PROMPT_SUFFIX="$IAMVERY_BRACKET_CLOSE_"
 ZSH_THEME_GIT_PROMPT_CLEAN=" $IAMVERY_GIT_CLEAN_COLOR✓"
 ZSH_THEME_GIT_PROMPT_DIRTY=" $IAMVERY_GIT_DIRTY_COLOR✗"
 
-# Our elements:
 if [ -e ~/.rvm/bin/rvm-prompt ]; then
-  IAMVERY_RVM_="$IAMVERY_BRACKET_COLOR"["$IAMVERY_RVM_COLOR\${\$(~/.rvm/bin/rvm-prompt i v g)#ruby-}$IAMVERY_BRACKET_COLOR"]"%{$reset_color%}"
+  IAMVERY_RVM_="$IAMVERY_BRACKET_OPEN_$IAMVERY_RVM_COLOR\${\$(~/.rvm/bin/rvm-prompt i v g)#ruby-}$IAMVERY_BRACKET_CLOSE_%{$reset_color%}"
 else
   if which rbenv &> /dev/null; then
-    IAMVERY_RVM_="$IAMVERY_BRACKET_COLOR"["$IAMVERY_RVM_COLOR\${\$(rbenv version | sed -e 's/ (set.*$//' -e 's/^ruby-//')}$CRUNCH_BRACKET_COLOR"]"%{$reset_color%}"
+    IAMVERY_RVM_="$IAMVERY_BRACKET_OPEN_$IAMVERY_RVM_COLOR\${\$(rbenv version | sed -e 's/ (set.*$//' -e 's/^ruby-//')}$IAMVERY_BRACKET_CLOSE_%{$reset_color%}"
   fi
 fi
+
 IAMVERY_GIT_="$IAMVERY_GIT_COLOR\$(git_prompt_info) "
 IAMVERY_PROMPT_="$IAMVERY_PROMPT_COLOR» "
 IAMVERY_DIR_="$IAMVERY_DIR_COLOR%~"
