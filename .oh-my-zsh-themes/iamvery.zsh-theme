@@ -28,7 +28,7 @@ ZSH_THEME_GIT_PROMPT_DIRTY=" $IAMVERY_GIT_DIRTY_COLOR✗"
 
 # Our elements:
 if [ -e ~/.rvm/bin/rvm-prompt ]; then
-  IAMVERY_RVM_="$IAMVERY_BRACKET_COLOR"["$IAMVERY_RVM_COLOR\${\$(~/.rvm/bin/rvm-prompt i v g)#ruby-}$CRUNCH_BRACKET_COLOR"]"%{$reset_color%}"
+  IAMVERY_RVM_="$IAMVERY_BRACKET_COLOR"["$IAMVERY_RVM_COLOR\${\$(~/.rvm/bin/rvm-prompt i v g)#ruby-}$IAMVERY_BRACKET_COLOR"]"%{$reset_color%}"
 else
   if which rbenv &> /dev/null; then
     IAMVERY_RVM_="$IAMVERY_BRACKET_COLOR"["$IAMVERY_RVM_COLOR\${\$(rbenv version | sed -e 's/ (set.*$//' -e 's/^ruby-//')}$CRUNCH_BRACKET_COLOR"]"%{$reset_color%}"
