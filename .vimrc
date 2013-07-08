@@ -83,3 +83,6 @@ nmap gV `[v`]
 
 " insert hash rocket with <c-l>
 imap <c-l> <space>=><space>
+
+" format ugly XML with a shortcut
+nnoremap <leader>x :PrettyXML<cr>
