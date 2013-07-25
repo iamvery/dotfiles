@@ -72,7 +72,9 @@
 /bin/keep-lively.sh
 /bin/reattach-to-user-namespace
 /bin/the-stable
+/bin/speedtest-cli
 /bin/subl
+/btsync
 /exit.log
 /paros
 /pgadmin.log
