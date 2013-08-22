@@ -9,7 +9,7 @@
 # * The RVM version and gemset (omitting the 'ruby' name if it's MRI)
 # * The current directory
 #
-# The brackets may be toggled off by defining this env var in your .rvmrc:
+# The brackets may be toggled off by defining this env var in your .zshrc:
 #   IAMVERY_SHOW_BRACKETS='no'
 #
 # Colors are at the top so you can mess with those separately if you like.
