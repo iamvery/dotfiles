@@ -3,6 +3,7 @@
 	email = ur@iamvery.com
 [core]
 	editor = vim
+	excludesfile = /Users/jay/.gitignore.global
 [diff]
 [color]
 	ui = auto
