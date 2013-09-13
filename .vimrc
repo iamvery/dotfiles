@@ -42,6 +42,7 @@ set directory=~/.vim/_temp//               " directory for swap files
 set undodir=~/.vim/_temp//                 " directory for undo files
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*  " ignore these patters for wildcard matching
 
+match ErrorMsg '\s\+$'  " highlight trailing whitespace as error
 
 """"""""""""""""
 "" KEY MAPPINGS
