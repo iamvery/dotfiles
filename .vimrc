@@ -89,3 +89,11 @@ imap <c-l> <space>=><space>
 
 " format ugly XML with a shortcut
 nnoremap <leader>x :PrettyXML<cr>
+
+" Bubble single lines
+nmap <C-k> ddkP
+nmap <C-j> ddp
+
+" Bubble multiple lines
+vmap <C-k> xkP`[V`]
+vmap <C-j> xp`[V`]
