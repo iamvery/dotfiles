@@ -1,8 +1,8 @@
 # IAMVERY - a modified version of Steve Eley's CRUNCH
 # (https://github.com/robbyrussell/oh-my-zsh/blob/master/themes/crunch.zsh-theme)
 #
-# This theme assumes you do most of your oh-my-zsh'ed "colorful" work at a single machine, 
-# and eschews the standard space-consuming user and hostname info. Instead, only the 
+# This theme assumes you do most of your oh-my-zsh'ed "colorful" work at a single machine,
+# and eschews the standard space-consuming user and hostname info. Instead, only the
 # things that vary in my own workflow are shown:
 #
 # * The Git branch and its 'dirty' state
