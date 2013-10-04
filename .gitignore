@@ -23,6 +23,7 @@
 /.mitmproxy
 /.mysql_history
 /.netrc
+/.ngrok
 /.node-gyp
 /.npm
 /.nvm
@@ -70,6 +71,7 @@
 /Things
 /VirtualBox VMs
 /bin/keep-lively.sh
+/bin/ngrok
 /bin/reattach-to-user-namespace
 /bin/the-stable
 /bin/speedtest-cli
