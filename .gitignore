@@ -48,7 +48,7 @@
 /.viminfo
 /.wireshark-etc
 /.wireshark
-/.zcompdump
+/.zcompdump*
 /.zsh-update
 /.zsh_history
 /Calibre Library
