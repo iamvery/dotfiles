@@ -90,6 +90,12 @@ imap <c-l> <space>=><space>
 " format ugly XML with a shortcut
 nnoremap <leader>x :PrettyXML<cr>
 
+" view blame for line
+nnoremap <leader>b :Gblame<cr>
+
+" browse line on github
+nnoremap <leader><S-b> :Gbrowse<cr>
+
 " Bubble single lines
 nmap <C-k> ddkP
 nmap <C-j> ddp
