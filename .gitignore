@@ -33,6 +33,7 @@
 /.psql_history
 /.rediscli_history
 /.rnd
+/.rubies
 /.rvm
 /.secrets
 /.sh_history
@@ -80,5 +81,6 @@
 /exit.log
 /paros
 /pgadmin.log
+/src
 /mm.cfg
 !.gitkeep
