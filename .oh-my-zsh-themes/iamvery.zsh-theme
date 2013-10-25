@@ -6,7 +6,7 @@
 # things that vary in my own workflow are shown:
 #
 # * The Git branch and its 'dirty' state
-# * The RVM version and gemset (omitting the 'ruby' name if it's MRI)
+# * The ruby version
 # * The current directory
 #
 # The brackets may be toggled off by defining this env var in your .zshrc:
@@ -16,7 +16,7 @@
 
 IAMVERY_BRACKET_COLOR="%{$fg[white]%}"
 IAMVERY_PROMPT_COLOR="%{$fg[yellow]%}"
-IAMVERY_RVM_COLOR="%{$fg[magenta]%}"
+IAMVERY_RUBY_COLOR="%{$fg[magenta]%}"
 IAMVERY_DIR_COLOR="%{$fg[green]%}"
 IAMVERY_GIT_COLOR="%{$fg[cyan]%}"
 IAMVERY_GIT_BRANCH_COLOR="%{$fg[blue]%}"
@@ -38,13 +38,7 @@ ZSH_THEME_GIT_PROMPT_SUFFIX="$IAMVERY_BRACKET_CLOSE_"
 ZSH_THEME_GIT_PROMPT_CLEAN=" $IAMVERY_GIT_CLEAN_COLOR●"
 ZSH_THEME_GIT_PROMPT_DIRTY=" $IAMVERY_GIT_DIRTY_COLOR●"
 
-if [ -e ~/.rvm/bin/rvm-prompt ]; then
-  IAMVERY_RVM_="$IAMVERY_BRACKET_OPEN_$IAMVERY_RVM_COLOR\${\$(~/.rvm/bin/rvm-prompt i v g)#ruby-}$IAMVERY_BRACKET_CLOSE_%{$reset_color%}"
-else
-  if which rbenv &> /dev/null; then
-    IAMVERY_RVM_="$IAMVERY_BRACKET_OPEN_$IAMVERY_RVM_COLOR\${\$(rbenv version | sed -e 's/ (set.*$//' -e 's/^ruby-//')}$IAMVERY_BRACKET_CLOSE_%{$reset_color%}"
-  fi
-fi
+IAMVERY_RUBY_="$IAMVERY_BRACKET_OPEN_$IAMVERY_RUBY_COLOR\${\$(ruby -v | awk '{print \$2}')}$IAMVERY_BRACKET_CLOSE_%{$reset_color%}"
 
 IAMVERY_GIT_="$IAMVERY_GIT_COLOR\$(git_prompt_info) "
 IAMVERY_PROMPT_="$IAMVERY_PROMPT_COLOR» "
@@ -52,4 +46,4 @@ IAMVERY_DIR_="$IAMVERY_DIR_COLOR%~"
 
 # Put it all together!
 PROMPT="$IAMVERY_GIT_$IAMVERY_PROMPT_%{$reset_color%}"
-RPROMPT="$IAMVERY_DIR_ $IAMVERY_RVM_%{$reset_color%}"
+RPROMPT="$IAMVERY_DIR_ $IAMVERY_RUBY_%{$reset_color%}"
