@@ -44,8 +44,7 @@ source $ZSH/oh-my-zsh.sh
 
 PATH=$PATH:$HOME/bin # Add user bin directory for executables
 PATH=$PATH:/usr/local/share/npm/bin # Add node package manager  bin
-
-PATH=/usr/local/git/bin:$PATH # Use git from brew over Xcode's
+PATH=/usr/local/git/bin:$PATH # Use git from homebrew over Xcode's
 
 source ~/.secrets
 
