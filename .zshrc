@@ -45,12 +45,13 @@ source $ZSH/oh-my-zsh.sh
 PATH=$PATH:$HOME/bin # Add user bin directory for executables
 PATH=$PATH:/usr/local/share/npm/bin # Add node package manager  bin
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 PATH=/usr/local/git/bin:$PATH # Use git from brew over Xcode's
-
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 source ~/.secrets
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+source /usr/local/share/chruby/chruby.sh
+source /usr/local/share/chruby/auto.sh
+chruby 2.0
