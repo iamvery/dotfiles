@@ -15,6 +15,9 @@
 /.gitk
 /.guard_history
 /.heroku
+/.hitch_export_authors
+/.hitch_pairs
+/.hitchrc
 /.ievms
 /.io_history
 /.irb-history
