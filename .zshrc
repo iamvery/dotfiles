@@ -53,3 +53,13 @@ export PATH="/usr/local/heroku/bin:$PATH"
 source /usr/local/share/chruby/chruby.sh
 source /usr/local/share/chruby/auto.sh
 chruby 2.0
+
+# Run the export script after invoking the hitch command, this is how hitch
+# sets the author and see for git. https://github.com/therubymug/hitch
+hitch(){
+  command hitch $@
+  export_script="$HOME/.hitch_export_authors"
+  if [[ -s $export_script ]]; then
+    source $export_script
+  fi
+}
