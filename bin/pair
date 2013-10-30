@@ -17,15 +17,15 @@ help(){
 }
 
 add(){
-  sudo su $tmux_user -c "export GEM_HOME=$GEM_HOME; gh-auth add --users $@"
+  sudo su $tmux_user -c "GEM_HOME=$GEM_HOME gh-auth add --users $@"
 }
 
 rm(){
-  sudo su $tmux_user -c "export GEM_HOME=$GEM_HOME; gh-auth remove --users $@"
+  sudo su $tmux_user -c "GEM_HOME=$GEM_HOME gh-auth remove --users $@"
 }
 
 ls(){
-  sudo su $tmux_user -c "export GEM_HOME=$GEM_HOME; gh-auth list"
+  sudo su $tmux_user -c "GEM_HOME=$GEM_HOME gh-auth list"
 }
 
 up(){
