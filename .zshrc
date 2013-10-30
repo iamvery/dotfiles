@@ -12,6 +12,8 @@ IAMVERY_SHOW_BRACKETS='no'
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias be="nocorrect bundle exec"
+alias hu="hitch $@"
+alias uh="hitch -u"
 alias slog="the-stable log"
 
 # Set to this to use case-sensitive completion
