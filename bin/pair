@@ -30,6 +30,11 @@ ls(){
 }
 
 up(){
+  # Add any users, if specified
+  if [[ ! -z $@ ]]; then
+    add $@
+  fi
+
   tmux -S /var/tmux/pairing
 }
 
