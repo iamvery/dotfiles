@@ -1,0 +1,47 @@
+#!/bin/sh
+
+command=$(basename $0)
+tmux_user=${TMUX_USER:-tmux}
+
+help(){
+  echo "Usage: $command <subcommand> [options]\n"
+  echo "Subcommands:"
+  echo "    add  Add a github user"
+  echo "    rm   Remove a github user"
+  echo "    ls   List github users"
+  echo "    up   Open shared tmux session"
+  echo "    tun  Start a reverse tunnel for pair sharing"
+  echo ""
+  echo "** Full Disclosure: This script uses sudo **"
+  echo ""
+}
+
+add(){
+  sudo su $tmux_user -c "export GEM_HOME=$GEM_HOME; gh-auth add --users $@"
+}
+
+rm(){
+  sudo su $tmux_user -c "export GEM_HOME=$GEM_HOME; gh-auth remove --users $@"
+}
+
+ls(){
+  sudo su $tmux_user -c "export GEM_HOME=$GEM_HOME; gh-auth list"
+}
+
+up(){
+  tmux -S /var/tmux/pairing
+}
+
+tun(){
+  ngrok --proto=tcp 22
+}
+
+subcommand=$1
+case $subcommand in
+  '' | '-h' | '--help')
+    help ;;
+  *)
+    shift
+    ${subcommand} $@
+    ;;
+esac
