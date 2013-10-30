@@ -14,6 +14,7 @@ IAMVERY_SHOW_BRACKETS='no'
 alias be="nocorrect bundle exec"
 alias hu="hitch $@"
 alias uh="hitch -u"
+alias hum="hu iamvery brianstanwyck"
 alias slog="the-stable log"
 
 # Set to this to use case-sensitive completion
