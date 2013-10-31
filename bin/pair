@@ -2,6 +2,7 @@
 
 command=$(basename $0)
 tmux_user=${TMUX_USER:-tmux}
+ngrok_host=${NGROK_HOST:-ngrok.com}
 
 help(){
   echo "Usage: $command <subcommand> [options]\n"
@@ -38,11 +39,33 @@ up(){
   tmux="tmux -S /var/tmux/pairing"
   $tmux new-session -d "pair tun"
   $tmux split-window
+  sleep 0.5 # some delay so tunnel has time to get up
+  $tmux send-keys "pair tunnel_info" C-m
   $tmux attach
 }
 
 tun(){
   ngrok --proto=tcp 22
+}
+
+tunnel_info(){
+  port=$(tunnel_port)
+
+  if [ ! -z $port ]; then
+    ssh_command="ssh -p $port $tmux_user@$ngrok_host"
+    echo $ssh_command
+    echo $ssh_command | reattach-to-user-namespace pbcopy
+  else
+    echo "Tunnel doesn't seem to be connected."
+  fi
+}
+
+tunnel_port(){
+  tunnel_info_endpoint="http://localhost:4040/http/in"
+  search_string="tcp://$ngrok_host"
+  port_strip_regex="s/^.*$ngrok_host:\([0-9]*\).*$/\1/"
+
+  curl -s $tunnel_info_endpoint | grep $search_string | sed $port_strip_regex
 }
 
 subcommand=$1
