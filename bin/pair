@@ -35,7 +35,10 @@ up(){
     add $@
   fi
 
-  tmux -S /var/tmux/pairing
+  tmux="tmux -S /var/tmux/pairing"
+  $tmux new-session -d "pair tun"
+  $tmux split-window
+  $tmux attach
 }
 
 tun(){
