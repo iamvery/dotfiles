@@ -49,6 +49,11 @@ PATH=$PATH:/usr/local/share/npm/bin # Add node package manager  bin
 PATH=/usr/local/git/bin:$PATH       # Use git from homebrew over Xcode's
 PATH=$PATH:/Applications/Postgres.app/Contents/MacOS/bin
 
+# Allows us to connect to local server without specifying host. This
+# can simply things such as Rails db configs, allowing you to leave
+# the host config out.
+export PGHOST=/var/pgsql_socket
+
 source ~/.secrets
 
 ### Added by the Heroku Toolbelt
