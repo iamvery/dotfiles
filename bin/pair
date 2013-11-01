@@ -40,7 +40,7 @@ up(){
   $tmux new-session -d "pair tun"
   $tmux split-window
   sleep 0.5 # some delay so tunnel has time to get up
-  $tmux send-keys "pair tunnel_info" C-m
+  $tmux send-keys "pair copy_tunnel_ssh_command" C-m
   $tmux attach
 }
 
@@ -48,7 +48,7 @@ tun(){
   ngrok --proto=tcp 22
 }
 
-tunnel_info(){
+copy_tunnel_ssh_command(){
   port=$(tunnel_port)
 
   if [ ! -z $port ]; then
