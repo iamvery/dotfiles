@@ -47,7 +47,7 @@ source $ZSH/oh-my-zsh.sh
 PATH=$PATH:$HOME/bin                # Add user bin directory for executables
 PATH=$PATH:/usr/local/share/npm/bin # Add node package manager  bin
 PATH=/usr/local/git/bin:$PATH       # Use git from homebrew over Xcode's
-PATH=$PATH:/Applications/Postgres.app/Contents/MacOS/bin
+PATH=/Applications/Postgres.app/Contents/MacOS/bin:$PATH
 
 # Allows us to connect to local server without specifying host. This
 # can simply things such as Rails db configs, allowing you to leave
