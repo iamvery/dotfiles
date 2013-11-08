@@ -3,11 +3,10 @@
 command=$(basename $0)
 tmux_user=${TMUX_USER:-tmux}
 
-# Make sure dependency is installed
+# Make sure dependencies are installed
 if [ ! $(command -v gh-auth) ]; then
   gem install github-auth
 fi
-
 if [ ! $(command -v ng) ]; then
   echo "This script depends on https://github.com/iamvery/dotfiles/blob/master/bin/ng"
   exit 1
