@@ -4,6 +4,11 @@ command=$(basename $0)
 tmux_user=${TMUX_USER:-tmux}
 ngrok_host=${NGROK_HOST:-ngrok.com}
 
+# Make sure dependency is installed
+if [ ! $(command -v gh-auth) ]; then
+  gem install github-auth
+fi
+
 help(){
   echo "Usage: $command <subcommand> [options]\n"
   echo "Subcommands:"
