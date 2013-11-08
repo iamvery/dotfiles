@@ -8,6 +8,11 @@ if [ ! $(command -v gh-auth) ]; then
   gem install github-auth
 fi
 
+if [ ! $(command -v ng) ]; then
+  echo "This script depends on https://github.com/iamvery/dotfiles/blob/master/bin/ng"
+  exit 1
+fi
+
 help(){
   echo "Usage: $command <subcommand> [options]\n"
   echo "Subcommands:"
