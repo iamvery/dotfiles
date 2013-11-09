@@ -44,6 +44,8 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
+export EDITOR=vim
+
 PATH=$PATH:$HOME/bin                # Add user bin directory for executables
 PATH=$PATH:/usr/local/share/npm/bin # Add node package manager  bin
 PATH=/usr/local/git/bin:$PATH       # Use git from homebrew over Xcode's
