@@ -31,7 +31,7 @@ help(){
 }
 
 add(){
-  sudo su $tmux_user -c "GEM_HOME=$GEM_HOME gh-auth add --users $@"
+  sudo su $tmux_user -c "GEM_HOME=$GEM_HOME gh-auth add --users $@ --command=\"$(which tmux) -S /var/tmux/pairing attach\""
 }
 
 rm(){
