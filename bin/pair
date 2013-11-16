@@ -31,7 +31,9 @@ help(){
 }
 
 add(){
-  sudo su $tmux_user -c "GEM_HOME=$GEM_HOME gh-auth add --users $@ --command=\"$(which tmux) -S /var/tmux/pairing attach\""
+  # The --lockdown option is a proposed feature https://github.com/chrishunt/github-auth/pull/25
+  # For now I use a locally built version of the gem including this option.
+  sudo su $tmux_user -c "GEM_HOME=$GEM_HOME gh-auth add --users $@ --command=\"$(which tmux) -S /var/tmux/pairing attach\" --lockdown"
 }
 
 rm(){
