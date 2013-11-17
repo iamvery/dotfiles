@@ -1,7 +1,6 @@
 #!/bin/sh
 
 command=$(basename $0)
-tmux_user=${TMUX_USER:-tmux}
 
 # Make sure dependencies are installed
 if [ ! $(command -v gh-auth) ]; then
@@ -31,17 +30,15 @@ help(){
 }
 
 add(){
-  # The --lockdown option is a proposed feature https://github.com/chrishunt/github-auth/pull/25
-  # For now I use a locally built version of the gem including this option.
-  sudo su $tmux_user -c "GEM_HOME=$GEM_HOME gh-auth add --users $@ --command=\"$(which tmux) -S /var/tmux/pairing attach\" --lockdown"
+  gh-auth add --users $@ --command="$(which tmux) attach -t pairing"
 }
 
 rm(){
-  sudo su $tmux_user -c "GEM_HOME=$GEM_HOME gh-auth remove --users $@"
+  gh-auth remove --users $@
 }
 
 ls(){
-  sudo su $tmux_user -c "GEM_HOME=$GEM_HOME gh-auth list"
+  gh-auth list
 }
 
 up(){
@@ -50,12 +47,11 @@ up(){
     add $@
   fi
 
-  tmux="tmux -S /var/tmux/pairing"
-  $tmux new-session -d "ng connect"
-  $tmux split-window
+  tmux new-session -d -s pairing "ng connect"
+  tmux split-window
   sleep 0.5 # some delay so tunnel has time to get up
-  $tmux send-keys "pair ssh" C-m
-  $tmux attach
+  tmux send-keys "pair ssh" C-m
+  tmux attach
 }
 
 ssh(){

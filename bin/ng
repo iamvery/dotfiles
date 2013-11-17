@@ -1,7 +1,6 @@
 #!/bin/sh
 
 ngrok_host=${NGROK_HOST:-ngrok.com}
-tmux_user=${TMUX_USER:-tmux}
 
 if [ ! $(command -v ngrok) ]; then
   echo "You must install https://ngrok.com to use this script."
@@ -29,7 +28,7 @@ ssh(){
   port=$(tunnel_port)
 
   if [ ! -z $port ]; then
-    ssh_command="ssh -p $port $tmux_user@$ngrok_host"
+    ssh_command="ssh -p $port $USER@$ngrok_host"
     echo $ssh_command
   else
     echo "Tunnel with TCP forwarding doesn't seem to be connected."
