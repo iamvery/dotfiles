@@ -48,6 +48,7 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 
 export EDITOR=vim
+export TMUX_USER=tmux
 
 PATH=$PATH:$HOME/bin                # Add user bin directory for executables
 PATH=$PATH:/usr/local/share/npm/bin # Add node package manager  bin
