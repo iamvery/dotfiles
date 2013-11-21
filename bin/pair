@@ -30,9 +30,9 @@ help(){
 }
 
 add(){
-  # The --lockdown option is a proposed feature https://github.com/chrishunt/github-auth/pull/25
+  # The --no-forwarding option is a proposed feature https://github.com/chrishunt/github-auth/pull/26
   # For now I use a locally built version of the gem including this option.
-  gh-auth add --users $@ --command="$(which tmux) attach -t pairing" --lockdown
+  gh-auth add --users $@ --command="$(which tmux) attach -t pairing" --no-forwarding
 }
 
 rm(){
