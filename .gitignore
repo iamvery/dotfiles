@@ -44,6 +44,7 @@
 /.sqlite_history
 /.ssh
 /.subversion
+/.swipl-dir-history
 /.the-stable
 /.tmuxinator
 /.vagrant.d
