@@ -16,6 +16,7 @@ alias hu="hitch $@"
 alias uh="hitch -u"
 alias hum="hu iamvery brianstanwyck"
 alias slog="the-stable log"
+alias pl="swipl"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
