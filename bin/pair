@@ -22,7 +22,7 @@ help(){
   echo "    rm   Remove a github user"
   echo "    ls   List github users"
   echo "    up   Open shared tmux session"
-  echo "    tun  Start a reverse tunnel for pair sharing"
+  echo "    ssh  Start a reverse tunnel for pair sharing"
   echo "         See: https://ngrok.com"
   echo ""
   echo "** Full Disclosure: This script uses sudo **"
