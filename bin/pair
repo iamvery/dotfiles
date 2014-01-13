@@ -24,9 +24,6 @@ help(){
   echo "    up   Open shared tmux session"
   echo "    ssh  Start a reverse tunnel for pair sharing"
   echo "         See: https://ngrok.com"
-  echo ""
-  echo "** Full Disclosure: This script uses sudo **"
-  echo ""
 }
 
 add(){
