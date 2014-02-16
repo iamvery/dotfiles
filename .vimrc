@@ -103,3 +103,9 @@ nmap <C-j> ddp
 " Bubble multiple lines
 vmap <C-k> xkP`[V`]
 vmap <C-j> xp`[V`]
+
+" Highlight words to avoid in tech writing
+" http://css-tricks.com/words-avoid-educational-writing/
+" https://github.com/pengwynn/dotfiles/commit/12159ea233180344be4e25d57056ccd37061a153
+highlight TechWordsToAvoid ctermbg=red ctermfg=white
+match TechWordsToAvoid /\cobviously\|basically\|simply\|of\scourse\|clearly\|just\|everyone\sknows\|however\|so,\|easy/
