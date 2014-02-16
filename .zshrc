@@ -17,6 +17,7 @@ alias uh="hitch -u"
 alias hum="hu iamvery brianstanwyck"
 alias slog="the-stable log"
 alias pl="swipl"
+alias prune="git branch --merged | grep -v \"\*\" | xargs -n 1 git branch -d"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
