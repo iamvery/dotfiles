@@ -12,6 +12,7 @@ let g:ctrlp_working_path_mode=0 " don't manage working directory
 let g:ctrlp_jump_to_buffer=0    " disable jumping to already open buffer
 let g:gist_clip_command='pbcopy'     " gist-vim: set clipboard command
 let g:gist_open_browser_after_post=1 " gist-vim: open gist in browser
+"let g:user_emmet_leader_key='<C-K>'  " emmet-vim: trigger key
 
 set autoread            " automatically re-read file changed outside of vim
 set clipboard=unnamed   " use system clipboard
@@ -107,5 +108,5 @@ vmap <C-j> xp`[V`]
 " Highlight words to avoid in tech writing
 " http://css-tricks.com/words-avoid-educational-writing/
 " https://github.com/pengwynn/dotfiles/commit/12159ea233180344be4e25d57056ccd37061a153
-highlight TechWordsToAvoid ctermbg=red ctermfg=white
-match TechWordsToAvoid /\cobviously\|basically\|simply\|of\scourse\|clearly\|just\|everyone\sknows\|however\|so,\|easy/
+" highlight TechWordsToAvoid ctermbg=red ctermfg=white
+" match TechWordsToAvoid /\c\b(obviously\|basically\|simply\|of\scourse\|clearly\|just\|everyone\sknows\|however\|so,\|easy)\b/
