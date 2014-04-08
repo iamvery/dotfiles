@@ -51,10 +51,7 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 
 source ~/.secrets
-
-source /usr/local/share/chruby/chruby.sh
-source /usr/local/share/chruby/auto.sh
-chruby 2.1
+source ~/.chruby
 
 # Run the export script after invoking the hitch command, this is how hitch
 # sets the author and see for git. https://github.com/therubymug/hitch
