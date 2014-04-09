@@ -6,11 +6,13 @@
 /.anyconnect
 /.bash_history
 /.cache
+/.cocoapods
 /.config
 /.cups
 /.dropbox
 /.dvdcss
 /.fontconfig
+/.fop
 /.gem
 /.gist-vim
 /.gitk
