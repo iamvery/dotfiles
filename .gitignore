@@ -1,5 +1,6 @@
 *.DS_Store
 /.CFUserTextEncoding
+/.Drobo_Dashboard_installer_os_version_check_log.txt
 /.Trash
 /.Xauthority
 /.adobe
@@ -11,6 +12,7 @@
 /.cups
 /.dropbox
 /.dvdcss
+/.dropbox-master
 /.fontconfig
 /.fop
 /.gem
