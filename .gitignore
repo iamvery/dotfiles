@@ -51,6 +51,7 @@
 /.subversion
 /.swipl-dir-history
 /.the-stable
+/.thestable
 /.tmuxinator
 /.vagrant.d
 /.vim/_backup
