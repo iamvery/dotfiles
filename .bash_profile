@@ -28,5 +28,6 @@ alias ip="curl icanhazip.com"
 alias pl="swipl"
 alias prune="git fetch --prune && git branch --merged | grep -v \"\*\" | xargs -n 1 git branch -d"
 
+source ~/.environment
 source ~/.secrets
 source ~/.chruby
