@@ -43,3 +43,6 @@
 [submodule ".vim/bundle/vim-swift"]
 	path = .vim/bundle/vim-swift
 	url = https://github.com/toyamarinyon/vim-swift.git
+[submodule ".vim/bundle/webapi-vim"]
+	path = .vim/bundle/webapi-vim
+	url = git@github.com:mattn/webapi-vim.git
