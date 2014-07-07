@@ -23,7 +23,7 @@ bash_prompt()
 
 PROMPT_COMMAND=bash_prompt
 
-alias be="nocorrect bundle exec"
+alias be="bundle exec"
 alias ip="curl icanhazip.com"
 alias pl="swipl"
 alias prune="git fetch --prune && git branch --merged | grep -v \"\*\" | xargs -n 1 git branch -d"
