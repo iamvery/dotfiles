@@ -35,3 +35,4 @@ alias prune="git fetch --prune && git branch --merged | grep -v \"\*\" | xargs -
 source ~/.environment
 source ~/.secrets
 source ~/.chruby
+source ~/.git-completion.bash
