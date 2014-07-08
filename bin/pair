@@ -1,4 +1,5 @@
 #!/bin/sh
+# http://iamvery.com/2013/11/16/tmux-pairing-anywhere-on-your-box.html
 
 command=$(basename $0)
 
