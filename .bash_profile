@@ -18,7 +18,11 @@ bash_prompt()
   arrow="\[\e[0;33m\]»\[\e[m\]"
   path="\[\e[0;32m\]\w\[\e[m\]"
 
-  PS1="$(git_dirty_indicator) $blue_git_branch $path $arrow "
+  if [ -n "$SSH_CLIENT" ]; then
+    host="\[\e[0;35m\]\h:\[\e[m\] "
+  fi
+
+  PS1="$host$(git_dirty_indicator) $blue_git_branch $path $arrow "
 }
 
 PROMPT_COMMAND=bash_prompt
