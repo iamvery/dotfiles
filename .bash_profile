@@ -28,6 +28,7 @@ bash_prompt()
 PROMPT_COMMAND=bash_prompt
 
 alias be="bundle exec"
+alias brewup="brew update && brew upgrade"
 alias ip="curl icanhazip.com"
 alias pl="swipl"
 alias prune="git fetch --prune && git branch --merged | grep -v \"\*\" | xargs -n 1 git branch -d"
