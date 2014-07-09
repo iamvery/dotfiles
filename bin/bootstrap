@@ -1,0 +1,32 @@
+#!/bin/sh
+
+# Set us up the environment. https://github.com/iamvery/dotfiles
+
+brew_ensure() {
+  package=$1
+
+  brew info $package | grep "Not installed" > /dev/null 2>&1
+  if [[ "$?" -eq "0" ]]; then
+    brew install $package
+  fi
+}
+
+if ! which brew > /dev/null 2>&1; then
+  # Install http://brew.sh
+  echo "**** Installing brew..."
+  ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+  echo "**** DONE!"
+fi
+
+echo "**** Install brew packages..."
+brew_ensure ack
+brew_ensure chruby
+brew_ensure ffmpeg
+brew_ensure heroku-toolbelt
+brew_ensure hub
+brew_ensure reattach-to-user-namespace
+brew_ensure ruby-install
+brew_ensure terminal-notifier
+brew_ensure tmux
+brew_ensure vim
+echo "**** DONE!"
