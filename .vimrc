@@ -14,7 +14,6 @@ let g:gist_clip_command='pbcopy'     " gist-vim: set clipboard command
 let g:gist_open_browser_after_post=1 " gist-vim: open gist in browser
 
 set autoread            " automatically re-read file changed outside of vim
-set clipboard=unnamed   " use system clipboard
 set colorcolumn=80,100  " add column at 80 and 100 characters
 set expandtab           " use spaces for <Tab>
 set foldlevelstart=99   " don't fold anything by default
