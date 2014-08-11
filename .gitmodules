@@ -46,3 +46,6 @@
 [submodule ".vim/bundle/webapi-vim"]
 	path = .vim/bundle/webapi-vim
 	url = git://github.com/mattn/webapi-vim.git
+[submodule ".vim/bundle/swift.vim"]
+	path = .vim/bundle/swift.vim
+	url = git://github.com/Keithbsmiley/swift.vim.git
