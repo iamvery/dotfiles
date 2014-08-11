@@ -1,6 +1,0 @@
-#!/bin/sh
-
-file=$1
-exec=$(echo $file | awk -F\. '{print$1}')
-
-xcrun swift "$file" && ./"$exec"

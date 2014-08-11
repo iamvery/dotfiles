@@ -32,6 +32,7 @@ alias brewup="brew update && brew upgrade"
 alias ip="curl icanhazip.com"
 alias pl="swipl"
 alias prune="git fetch --prune && git branch --merged | grep -v \"\*\" | xargs -n 1 git branch -d"
+alias swift="xcrun swift"
 
 source ~/.environment
 source ~/.secrets
