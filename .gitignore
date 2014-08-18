@@ -27,6 +27,7 @@
 /.ievms
 /.io_history
 /.irb-history
+/.jagex_cache_32
 /.junique
 /.lesshst
 /.lldb
@@ -95,6 +96,9 @@
 /bin/subl
 /btsync
 /exit.log
+/jagex_cl_runescape_LIVE.dat
+/jagexappletviewer.preferences
+/jagexcache
 /paros
 /pgadmin.log
 /src
