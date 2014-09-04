@@ -31,3 +31,8 @@ brew_ensure terminal-notifier
 brew_ensure tmux
 brew_ensure vim
 echo "**** DONE!"
+
+echo "**** Install gems..."
+gem install bundler
+bundle install
+echo "**** DONE!"
