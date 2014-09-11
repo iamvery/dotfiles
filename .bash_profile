@@ -33,6 +33,8 @@ alias ip="curl icanhazip.com"
 alias pl="swipl"
 alias prune="git fetch --prune && git branch --merged | grep -v \"\*\" | xargs -n 1 git branch -d"
 alias swift="xcrun swift"
+alias pd="pushd"
+alias dp="popd"
 
 source ~/.environment
 source ~/.secrets
