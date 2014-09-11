@@ -18,6 +18,7 @@
   cp = cherry-pick
   di = diff
   dc = diff --cached
+  dx = diff --no-prefix -U1000
   amend = commit --amend
   aa = add --all
   ff = merge --ff-only
