@@ -3,7 +3,7 @@ execute pathogen#infect()
 syntax on                 " show synatx highlighting
 filetype plugin indent on
 
-au FocusLost * :wa        " autosave when file focus is lost
+autocmd FocusLost * :wa        " autosave when file focus is lost
 
 colorscheme Tomorrow-Night
 
