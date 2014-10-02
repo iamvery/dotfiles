@@ -4,6 +4,8 @@ syntax on                 " show synatx highlighting
 filetype plugin indent on
 
 autocmd FocusLost * :wa        " autosave when file focus is lost
+autocmd FileType gitcommit,markdown setlocal spell
+autocmd FileType gitcommit,markdown set complete+=kspell
 
 colorscheme Tomorrow-Night
 
