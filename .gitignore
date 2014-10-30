@@ -17,6 +17,7 @@
 /.fontconfig
 /.fop
 /.gem
+/.ghc
 /.gist-vim
 /.gitk
 /.guard_history
