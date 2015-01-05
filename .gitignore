@@ -11,6 +11,7 @@
 /.cocoapods
 /.config
 /.cups
+/.deis
 /.dropbox
 /.dvdcss
 /.dropbox-master
@@ -90,6 +91,8 @@
 /Sites
 /Things
 /VirtualBox VMs
+/bin/deis
+/bin/deisctl
 /bin/ngrok
 /bin/reattach-to-user-namespace
 /bin/the-stable
