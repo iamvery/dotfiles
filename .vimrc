@@ -101,3 +101,6 @@ nmap <C-j> ddp
 " Bubble multiple lines
 vmap <C-k> xkP`[V`]
 vmap <C-j> xp`[V`]
+
+" Dispatchin!
+map <Leader>t :Dispatch bundle exec rspec %<CR>
