@@ -103,5 +103,8 @@ nmap <C-j> ddp
 vmap <C-k> xkP`[V`]
 vmap <C-j> xp`[V`]
 
-" Dispatchin!
-map <Leader>t :Dispatch bundle exec rspec %<CR>
+" vim-rspec mappings
+map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+map <Leader>a :call RunAllSpecs()<CR>
