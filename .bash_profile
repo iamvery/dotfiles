@@ -1,6 +1,6 @@
 git_dirty_indicator()
 {
-  git_status=$(git status --porcelain)
+  git_status=$(git status --porcelain 2> /dev/null)
 
   if [ -z "$git_status" ]
   then
@@ -12,7 +12,7 @@ git_dirty_indicator()
 
 bash_prompt()
 {
-  git_branch=$(git rev-parse --abbrev-ref HEAD)
+  git_branch=$(git rev-parse --abbrev-ref HEAD 2> /dev/null)
   ruby_version="\[\e[0;35m\]$(ruby --version | awk '{print $2}')\[\e[m\]"
   blue_git_branch="\[\e[0;34m\]$git_branch\[\e[m\]"
   arrow="\[\e[0;33m\]»\[\e[m\]"
