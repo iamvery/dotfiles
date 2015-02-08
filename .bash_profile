@@ -11,11 +11,17 @@ git_dirty_indicator()
   fi
 }
 
+git_branch()
+{
+  git_branch2=$(git rev-parse --abbrev-ref HEAD 2> /dev/null)
+  [ $? -ne 0 ] && return
+
+  echo "\[\e[0;34m\]$git_branch2\[\e[m\] "
+}
+
 bash_prompt()
 {
-  git_branch=$(git rev-parse --abbrev-ref HEAD 2> /dev/null)
   ruby_version="\[\e[0;35m\]$(ruby --version | awk '{print $2}')\[\e[m\]"
-  blue_git_branch="\[\e[0;34m\]$git_branch\[\e[m\]"
   arrow="\[\e[0;33m\]»\[\e[m\]"
   path="\[\e[0;32m\]\w\[\e[m\]"
 
@@ -23,7 +29,7 @@ bash_prompt()
     host="\[\e[0;35m\]\h:\[\e[m\] "
   fi
 
-  PS1="$host$(git_dirty_indicator)$blue_git_branch $path $arrow "
+  PS1="$host$(git_dirty_indicator)$(git_branch)$path $arrow "
 }
 
 PROMPT_COMMAND=bash_prompt
