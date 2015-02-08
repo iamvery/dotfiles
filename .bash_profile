@@ -1,6 +1,7 @@
 git_dirty_indicator()
 {
   git_status=$(git status --porcelain 2> /dev/null)
+  [ $? -ne 0 ] && return
 
   if [ -z "$git_status" ]
   then
