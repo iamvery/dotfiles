@@ -5,9 +5,9 @@ git_dirty_indicator()
 
   if [ -z "$git_status" ]
   then
-    echo "\[\e[1;32m\]●\[\e[m\]"
+    echo "\[\e[1;32m\]●\[\e[m\] "
   else
-    echo "\[\e[1;31m\]●\[\e[m\]"
+    echo "\[\e[1;31m\]●\[\e[m\] "
   fi
 }
 
@@ -23,7 +23,7 @@ bash_prompt()
     host="\[\e[0;35m\]\h:\[\e[m\] "
   fi
 
-  PS1="$host$(git_dirty_indicator) $blue_git_branch $path $arrow "
+  PS1="$host$(git_dirty_indicator)$blue_git_branch $path $arrow "
 }
 
 PROMPT_COMMAND=bash_prompt
