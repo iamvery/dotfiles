@@ -38,6 +38,7 @@ alias be="bundle exec"
 alias brewup="brew update && brew upgrade"
 alias ip="curl icanhazip.com"
 alias jekylls="jekyll server --watch --drafts"
+alias jf="GIT_EDITOR=\"mvim -f\" hub pull-request $@ | pbcopy"
 alias pl="swipl"
 # http://stevenharman.net/git-clean-delete-already-merged-branches
 alias prune="git fetch --prune && git branch --merged | grep -v \"\*\" | xargs -n 1 git branch -d"
