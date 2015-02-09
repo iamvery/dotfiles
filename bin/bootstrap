@@ -25,6 +25,7 @@ brew_ensure ffmpeg
 brew_ensure git
 brew_ensure heroku-toolbelt
 brew_ensure hub
+brew_ensure macvim
 brew_ensure reattach-to-user-namespace
 brew_ensure ruby-install
 brew_ensure terminal-notifier
