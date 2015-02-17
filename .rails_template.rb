@@ -14,17 +14,20 @@ end
 commit "Add dotenv and pry-rails"
 
 gem_group :test do
+  gem "capybara"
   gem "rspec-rails", "~> 3.0"
+  gem "turnip"
 end
 
 run "wget https://gist.github.com/iamvery/6c87c9e191d32603aa78/raw/.rspec"
 run "mkdir spec"
 run "wget --directory-prefix=spec https://gist.github.com/iamvery/6c87c9e191d32603aa78/raw/rails_spec_helper.rb"
 run "wget --directory-prefix=spec https://gist.github.com/iamvery/6c87c9e191d32603aa78/raw/spec_helper.rb"
+run "wget --directory-prefix=spec https://gist.github.com/iamvery/6c87c9e191d32603aa78/raw/turnip_helper.rb"
 
 run "bundle binstubs rspec-core"
 
-commit "Add and configure RSpec"
+commit "Add and configure RSpec with Turnip"
 
 # Remove comments from Gemfile
 run "sed -i '' '/^.*#/ d' Gemfile"
