@@ -32,7 +32,6 @@ download_file "https://gist.github.com/iamvery/6c87c9e191d32603aa78/raw/turnip_h
 run "bundle binstubs rspec-core"
 commit "Add and configure RSpec with Turnip"
 
-# Remove comments from Gemfile
 run "sed -i '' '/^.*#/ d' Gemfile"
 # Remove turbolinks
 run "sed -i '' '/turbolinks/ d' Gemfile"
