@@ -6,11 +6,12 @@ end
 git :init
 commit "New Rails app"
 
-gem_group :development do
+gem_group :development, :test do
+  gem "dotenv"
   gem "pry-rails"
 end
 
-commit "Add pry-rails"
+commit "Add dotenv and pry-rails"
 
 gem_group :test do
   gem "rspec-rails", "~> 3.0"
