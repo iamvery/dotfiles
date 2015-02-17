@@ -38,6 +38,7 @@ commit "Remove Gemfile comments"
 # TODO Gemfile cleanup
 # TODO Ruby version in gemfile?
 # TODO database_cleaner?
+# TODO better error output
 
 run "bundle install"
 commit "Bundle gems"
