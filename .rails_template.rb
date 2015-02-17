@@ -30,7 +30,7 @@ run "sed -i '' '/^.*#/ d' Gemfile"
 # Remove turbolinks
 run "sed -i '' '/turbolinks/ d' Gemfile"
 run "sed -i '' '/turbolinks/ d' app/assets/javascripts/application.js"
-run "sed -i '' \"s/, 'data-turbolinks-track' => true//\" app/views/layouts/application.html.erb"
+run %q{sed -i '' "s/, 'data-turbolinks-track' => true//" app/views/layouts/application.html.erb}
 
 commit "Remove turbolinks"
 
