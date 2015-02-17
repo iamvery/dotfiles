@@ -4,7 +4,9 @@ def commit(message)
 end
 
 def download_file(url, directory = ".")
-  run "wget --directory-prefix=#{directory} #{url}"
+  inside(directory) do
+    run "curl --location --remote-name #{url}"
+  end
 end
 
 git :init
