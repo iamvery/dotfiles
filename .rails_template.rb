@@ -47,6 +47,7 @@ run "chmod +x bin/bootstrap"
 commit "Add bootstrap script"
 
 run "rm README.rdoc"
-run "touch README.md"
+run "wget https://gist.github.com/iamvery/6c87c9e191d32603aa78/raw/README.md"
+run %Q{sed -i '' "s/\\[APP NAME\\]/#{app_path.titleize}/" README.md}
 
 commit "Use markdown readme"
