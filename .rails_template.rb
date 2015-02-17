@@ -41,6 +41,11 @@ run "bundle install"
 
 commit "Bundle gems"
 
+run "wget --directory-prefix=bin https://gist.github.com/iamvery/6c87c9e191d32603aa78/raw/bootstrap"
+run "chmod +x bin/bootstrap"
+
+commit "Add bootstrap script"
+
 run "rm README.rdoc"
 run "touch README.md"
 
