@@ -45,7 +45,7 @@ alias prune="git fetch --prune && git branch --merged | grep -v \"\*\" | xargs -
 alias swift="xcrun swift"
 alias pd="pushd"
 alias dp="popd"
-alias railsup="rails new --skip-bundle --skip-keeps --skip-spring --skip-test-unit"
+alias railsup="rails new --template=~/.rails_template.rb $@"
 
 source ~/.environment
 source ~/.secrets
