@@ -40,6 +40,8 @@ run %q{sed -i '' "s/, 'data-turbolinks-track' => true//" app/views/layouts/appli
 commit "Remove turbolinks"
 
 # TODO Gemfile cleanup
+# TODO Ruby version in gemfile?
+# TODO database_cleaner?
 
 run "bundle install"
 
