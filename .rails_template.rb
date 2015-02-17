@@ -3,6 +3,10 @@ def commit(message)
   git commit: "-m '#{message}'"
 end
 
+def download_file(url, directory = ".")
+  run "wget --directory-prefix=#{directory} #{url}"
+end
+
 git :init
 commit "New Rails app"
 
@@ -19,11 +23,11 @@ gem_group :test do
   gem "turnip"
 end
 
-run "wget https://gist.github.com/iamvery/6c87c9e191d32603aa78/raw/.rspec"
+download_file "https://gist.github.com/iamvery/6c87c9e191d32603aa78/raw/.rspec"
 run "mkdir spec"
-run "wget --directory-prefix=spec https://gist.github.com/iamvery/6c87c9e191d32603aa78/raw/rails_spec_helper.rb"
-run "wget --directory-prefix=spec https://gist.github.com/iamvery/6c87c9e191d32603aa78/raw/spec_helper.rb"
-run "wget --directory-prefix=spec https://gist.github.com/iamvery/6c87c9e191d32603aa78/raw/turnip_helper.rb"
+download_file "https://gist.github.com/iamvery/6c87c9e191d32603aa78/raw/rails_spec_helper.rb", "spec"
+download_file "https://gist.github.com/iamvery/6c87c9e191d32603aa78/raw/spec_helper.rb", "spec"
+download_file "https://gist.github.com/iamvery/6c87c9e191d32603aa78/raw/turnip_helper.rb", "spec"
 
 run "bundle binstubs rspec-core"
 commit "Add and configure RSpec with Turnip"
@@ -43,11 +47,11 @@ commit "Remove turbolinks"
 run "bundle install"
 commit "Bundle gems"
 
-run "wget --directory-prefix=bin https://gist.github.com/iamvery/6c87c9e191d32603aa78/raw/bootstrap"
+download_file "https://gist.github.com/iamvery/6c87c9e191d32603aa78/raw/bootstrap", "bin"
 run "chmod +x bin/bootstrap"
 commit "Add bootstrap script"
 
 run "rm README.rdoc"
-run "wget https://gist.github.com/iamvery/6c87c9e191d32603aa78/raw/README.md"
+download_file "https://gist.github.com/iamvery/6c87c9e191d32603aa78/raw/README.md"
 run %Q{sed -i '' "s/\\[APP NAME\\]/#{app_path.titleize}/" README.md}
 commit "Use markdown readme"
