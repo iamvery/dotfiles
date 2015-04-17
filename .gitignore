@@ -5,7 +5,9 @@
 /.Xauthority
 /.adobe
 /.anyconnect
+/.aws
 /.bash_history
+/.byebug_hist
 /.cache
 /.camper_van
 /.cocoapods
@@ -15,6 +17,7 @@
 /.dropbox
 /.dvdcss
 /.dropbox-master
+/.exercism.json
 /.fontconfig
 /.fop
 /.gem
@@ -30,6 +33,7 @@
 /.io_history
 /.irb-history
 /.jagex_cache_32
+/.jssc
 /.junique
 /.lesshst
 /.lldb
@@ -99,6 +103,7 @@
 /bin/speedtest-cli
 /bin/subl
 /btsync
+/exercism
 /exit.log
 /jagex_cl_runescape_LIVE.dat
 /jagexappletviewer.preferences
