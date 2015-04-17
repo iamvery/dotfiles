@@ -18,6 +18,7 @@
 /.dvdcss
 /.dropbox-master
 /.exercism.json
+/.floorc.json
 /.fontconfig
 /.fop
 /.gem
@@ -50,6 +51,7 @@
 /.pgpass
 /.pry_history
 /.psql_history
+/.python_history
 /.rediscli_history
 /.rnd
 /.rubies
@@ -64,6 +66,7 @@
 /.thestable
 /.tmuxinator
 /.vagrant.d
+/.vegas
 /.vim/_backup
 /.vim/_temp
 /.vim/.netrwhist
@@ -105,6 +108,7 @@
 /btsync
 /exercism
 /exit.log
+/floobits
 /jagex_cl_runescape_LIVE.dat
 /jagexappletviewer.preferences
 /jagexcache
