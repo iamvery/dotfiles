@@ -32,6 +32,7 @@
   nti = update-index --no-assume-unchanged
   pop = stash pop
   head = !git l -1
+  pr = config --add remote.origin.fetch +refs/pull/*/head:refs/remotes/origin/pr/*
 
   # Logging
   h = !git head
