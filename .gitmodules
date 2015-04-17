@@ -31,9 +31,6 @@
 [submodule ".vim/bundle/vim-markdown"]
 	path = .vim/bundle/vim-markdown
 	url = git://github.com/tpope/vim-markdown.git
-[submodule ".vim/bundle/vim-airline"]
-	path = .vim/bundle/vim-airline
-	url = git://github.com/bling/vim-airline.git
 [submodule ".vim/bundle/syntastic"]
 	path = .vim/bundle/syntastic
 	url = git://github.com/scrooloose/syntastic.git
@@ -58,3 +55,6 @@
 [submodule ".vim/bundle/vim-rspec"]
 	path = .vim/bundle/vim-rspec
 	url = git://github.com/thoughtbot/vim-rspec.git
+[submodule ".vim/bundle/vim-lightline"]
+	path = .vim/bundle/vim-lightline
+	url = git://github.com/itchyny/lightline.vim.git
