@@ -58,3 +58,9 @@
 [submodule ".vim/bundle/vim-lightline"]
 	path = .vim/bundle/vim-lightline
 	url = git://github.com/itchyny/lightline.vim.git
+[submodule ".vim/bundle/vim-elixir"]
+	path = .vim/bundle/vim-elixir
+	url = git://github.com/elixir-lang/vim-elixir.git
+[submodule ".vim/bundle/vim-endwise"]
+	path = .vim/bundle/vim-endwise
+	url = git://github.com/tpope/vim-endwise.git
