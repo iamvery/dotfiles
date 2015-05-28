@@ -6,6 +6,7 @@ filetype plugin indent on
 autocmd FocusLost * :wa        " autosave when file focus is lost
 autocmd FileType gitcommit,markdown setlocal spell
 autocmd FileType gitcommit,markdown set complete+=kspell
+autocmd Filetype html,xml set formatexpr=MyFormatExpr(v:lnum,v:lnum+v:count-1)
 
 colorscheme Tomorrow-Night
 
