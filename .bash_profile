@@ -34,18 +34,19 @@ bash_prompt()
 
 PROMPT_COMMAND=bash_prompt
 
-alias be="bundle exec"
-alias brewup="brew update && brew upgrade"
-alias ip="curl icanhazip.com"
-alias jkl="jekyll server --watch --drafts"
-alias jf="GIT_EDITOR=\"mvim -f\" hub pull-request $@ | pbcopy"
-alias json="python -m json.tool"
-alias pl="swipl"
+alias be='bundle exec'
+alias brewup='brew update && brew upgrade'
+alias ip='curl icanhazip.com'
+alias jkl='jekyll server --watch --drafts'
+alias jf='GIT_EDITOR="mvim -f" hub pull-request $@ | pbcopy'
+alias json='python -m json.tool'
+alias pl=swipl
 # http://stevenharman.net/git-clean-delete-already-merged-branches
-alias prune="git fetch --prune && git branch --merged | grep -v \"\*\" | xargs -n 1 git branch -d"
-alias swift="xcrun swift"
-alias pd="pushd"
-alias dp="popd"
+alias prune='git fetch --prune && git branch --merged | grep -v "*" | xargs -n 1 git branch -d'
+alias pcpsql='psql -d partcycle-backend_development'
+alias swift='xcrun swift'
+alias pd=pushd
+alias dp=popd
 alias railsup="rails new --template=~/.rails_template.rb $@"
 
 source ~/.environment
