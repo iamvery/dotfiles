@@ -20,6 +20,7 @@ let g:rspec_command="Dispatch bundle exec rspec {spec}" " vim-rspec: use with vi
 set autoread            " automatically re-read file changed outside of vim
 set colorcolumn=80,100  " add column at 80 and 100 characters
 set expandtab           " use spaces for <Tab>
+set exrc                " enbale project specific configuration
 set foldlevelstart=99   " don't fold anything by default
 set foldmethod=indent   " "collapse" text blocks based on indentation
 set gdefault            " use global substitution automatically
@@ -111,3 +112,5 @@ map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
 
 map <Leader>md :call MarkedPreview()<CR>
+
+set secure
