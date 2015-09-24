@@ -1,0 +1,22 @@
+#!/usr/bin/env ruby
+
+phrases = [
+  "You're going to kill it today",
+  "Think outside of the box",
+  "This is your moment",
+  "The issue you are facing is not insurmountable",
+  "You are surrounded by a smart team to help you achieve great success",
+  "Dig hard, and you will find the right answer",
+  "You are the only person with your exact blend of talents and skills",
+  "Even if you fail today, you will learn",
+  "Each day is an opportunity",
+  "It's not what you look at that matters, it's what you see",
+  "You can do anything, but not everything",
+  "You've got this",
+]
+
+given_index = ARGV.first
+day_of_year = Time.now.strftime("%j").to_i
+index = given_index || day_of_year % phrases.count
+
+puts phrases[index.to_i]
