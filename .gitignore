@@ -14,6 +14,7 @@
 /.config
 /.cups
 /.deis
+/.docker
 /.dropbox
 /.dvdcss
 /.dropbox-master
@@ -75,6 +76,7 @@
 /.wireshark-etc
 /.wireshark
 /.zcompdump*
+/.znc
 /.zsh-update
 /.zsh_history
 /Applications
