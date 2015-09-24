@@ -53,3 +53,6 @@ run "rm README.rdoc"
 download_file "https://gist.github.com/iamvery/6c87c9e191d32603aa78/raw/README.md"
 run %Q{sed -i '' "s/\\[APP NAME\\]/#{app_path.titleize}/" README.md}
 commit "Use markdown readme"
+
+run "bin/rake db:create db:schema:dump"
+commit "Add schema.rb"
