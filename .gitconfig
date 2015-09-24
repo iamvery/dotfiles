@@ -40,3 +40,5 @@
   l = log --graph --abbrev-commit --pretty=oneline --decorate
 [github]
   user = iamvery
+[heroku]
+	account = bnr
