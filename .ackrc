@@ -5,7 +5,9 @@
  --type-set=cucumber=.feature
  --type-set=ejs=.ejs
  --type-set=markdown=.markdown,.md
+ --ignore-dir=deps
  --ignore-dir=log
+ --ignore-dir=node_modules
  --ignore-dir=rails
  --ignore-dir=tmp
  --ignore-dir=coverage
