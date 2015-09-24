@@ -21,6 +21,7 @@ fi
 echo "**** Install brew packages..."
 brew_ensure ack
 brew_ensure chruby
+brew_ensure ctags
 brew_ensure ffmpeg
 brew_ensure git
 brew_ensure heroku-toolbelt
@@ -31,9 +32,14 @@ brew_ensure ruby-install
 brew_ensure terminal-notifier
 brew_ensure tmux
 brew_ensure vim
+brew_ensure znc
 echo "**** DONE!"
 
 echo "**** Install gems..."
 gem install bundler
 bundle install
+echo "**** DONE!"
+
+echo "**** Install aws..."
+pip install awscli
 echo "**** DONE!"
