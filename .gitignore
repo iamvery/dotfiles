@@ -28,6 +28,7 @@
 /.gitk
 /.guard_history
 /.heroku
+/.hex
 /.hitch_export_authors
 /.hitch_pairs
 /.hitchrc
@@ -42,6 +43,7 @@
 /.lldb-history
 /.lldb-swift-history
 /.mitmproxy
+/.mix
 /.mysql_history
 /.netrc
 /.ngrok
