@@ -57,3 +57,5 @@ source ~/.environment
 source ~/.secrets
 source ~/.chruby
 source ~/.git-completion.bash
+
+positivity
