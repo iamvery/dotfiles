@@ -50,7 +50,7 @@ alias swift='xcrun swift'
 alias pd=pushd
 alias dp=popd
 alias railsup="rails new --template=~/.rails_template.rb $@"
-alias wip='git add . && git commit -m wip'
+alias wip='git add . && git commit -m "wip [ci skip]"'
 alias unwip='git reset --soft HEAD^'
 
 source ~/.environment
