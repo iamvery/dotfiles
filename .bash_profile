@@ -32,6 +32,7 @@ bash_prompt()
   PS1="$host$(git_dirty_indicator)$(git_branch)$path $arrow "
 }
 
+# Take advantage of https://github.com/iamvery/lita-reviewme from CLI
 function review()
 {
   curl "https://slack.com/api/chat.postMessage?token=$SLACK_TOKEN&channel=%23backend&text=~review%20$1&as_user=true&pretty=1"
