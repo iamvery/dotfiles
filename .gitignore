@@ -19,6 +19,7 @@
 /.dvdcss
 /.dropbox-master
 /.exercism.json
+/.fbPager*
 /.floorc.json
 /.fontconfig
 /.fop
@@ -82,6 +83,7 @@
 /.zsh-update
 /.zsh_history
 /Applications
+/Backups
 /Calibre Library
 /Code
 /Desktop
