@@ -23,16 +23,21 @@ brew_ensure ack
 brew_ensure chruby
 brew_ensure ctags
 brew_ensure ffmpeg
+brew_ensure fpp
 brew_ensure fswatch
+brew_ensure gifify
 brew_ensure git
 brew_ensure go
+brew_ensure graphviz
 brew_ensure heroku-toolbelt
 brew_ensure hub
 brew_ensure macvim
+brew_ensure ngrok
 brew_ensure reattach-to-user-namespace
 brew_ensure ruby-install
 brew_ensure terminal-notifier
 brew_ensure tmux
+brew_ensure tree
 brew_ensure vim
 brew_ensure znc
 echo "**** DONE!"
