@@ -112,5 +112,6 @@ map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
 
 map <Leader>md :call MarkedPreview()<CR>
+map <Leader>m :!mix test<CR>
 
 set secure
