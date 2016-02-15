@@ -23,7 +23,9 @@ brew_ensure ack
 brew_ensure chruby
 brew_ensure ctags
 brew_ensure ffmpeg
+brew_ensure fswatch
 brew_ensure git
+brew_ensure go
 brew_ensure heroku-toolbelt
 brew_ensure hub
 brew_ensure macvim
