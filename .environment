@@ -7,3 +7,5 @@ PATH=$PATH:/usr/local/share/npm/bin
 PATH=/usr/local/bin:$PATH
 PATH=/usr/local/heroku/bin:$PATH
 PATH=/Applications/Postgres.app/Contents/Versions/9.4/bin:$PATH
+
+eval "$(docker-machine env default)"
