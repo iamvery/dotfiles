@@ -48,6 +48,8 @@ alias ip='curl icanhazip.com'
 alias jkl='jekyll server --watch --drafts'
 alias jf='GIT_EDITOR="mvim -f" hub pull-request $@ | pbcopy'
 alias json='python -m json.tool'
+# http://solidfoundationwebdev.com/blog/posts/create-an-bash-function-to-open-latest-active-record-migration
+alias lm='vim db/migrate/$(ls db/migrate | sort | tail -1)'
 alias pl=swipl
 # http://stevenharman.net/git-clean-delete-already-merged-branches
 alias prune='git fetch --prune && git branch --merged | grep -v "*" | xargs -n 1 git branch -d'
