@@ -44,7 +44,7 @@ alias be='bundle exec'
 alias brewup='brew update && brew upgrade'
 alias gi=git
 alias gti=git
-alias gotest='fswatch -o . | xargs -n1 -I{} go test'
+alias wat="fswatch -o . | xargs -n1 -I{} $1"
 alias ip='curl icanhazip.com'
 alias jkl='jekyll server --watch --drafts'
 alias jf='GIT_EDITOR="mvim -f" hub pull-request $@ | pbcopy'
