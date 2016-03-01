@@ -65,6 +65,7 @@ alias unwip='git reset --soft HEAD^'
 source ~/.environment
 source ~/.secrets
 source ~/.chruby
+source ~/.setup_rbenv
 source ~/.git-completion.bash
 
 positivity
