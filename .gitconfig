@@ -33,6 +33,7 @@
   pop = stash pop
   head = !git l -1
   pr = config --add remote.origin.fetch +refs/pull/*/head:refs/remotes/origin/pr/*
+  pf = push --force-with-lease
 
   # Logging
   h = !git head
