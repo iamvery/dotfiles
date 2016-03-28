@@ -59,6 +59,7 @@ alias swift='xcrun swift'
 alias pd=pushd
 alias dp=popd
 alias railsup="rails new --template=~/.rails_template.rb $@"
+alias todo="grep --recursive --ignore-case --extended-regex 'todo|fixme' ."
 alias wip='git add . && git commit -m "wip [ci skip]"'
 alias unwip='git reset --soft HEAD^'
 
