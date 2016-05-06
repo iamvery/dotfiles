@@ -4,6 +4,7 @@
 /.Trash
 /.Xauthority
 /.adobe
+/.android
 /.anyconnect
 /.atom
 /.aws
@@ -29,6 +30,7 @@
 /.ghc
 /.gist-vim
 /.gitk
+/.gradle
 /.guard_history
 /.heroku
 /.hex
@@ -53,6 +55,7 @@
 /.node-gyp
 /.npm
 /.nvm
+/.oracle_jre_usage
 /.pgadmin_histoqueries
 /.pgpass
 /.pry_history
