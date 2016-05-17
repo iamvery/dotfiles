@@ -56,3 +56,8 @@ commit "Use markdown readme"
 
 run "bin/rake db:create db:schema:dump"
 commit "Add schema.rb"
+
+inject_into_file "config/environments/test.rb", before: "end" do
+  "\n  config.action_controller.action_on_unpermitted_parameters = :raise\n"
+end
+commit "Raise unpermitted parameters by default in test env"
