@@ -9,3 +9,4 @@ PATH=/usr/local/heroku/bin:$PATH
 PATH=/Applications/Postgres.app/Contents/Versions/9.4/bin:$PATH
 
 eval "$(docker-machine env default)"
+test -s "$HOME/.kiex/scripts/kiex" && source "$HOME/.kiex/scripts/kiex"
