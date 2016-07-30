@@ -44,3 +44,5 @@
   user = iamvery
 [heroku]
 	account = bnr
+[commit]
+	verbose = true
