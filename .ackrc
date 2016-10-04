@@ -6,6 +6,7 @@
  --type-set=ejs=.ejs
  --type-set=markdown=.markdown,.md
  --ignore-dir=deps
+ --ignore-dir=doc
  --ignore-dir=log
  --ignore-dir=node_modules
  --ignore-dir=rails
