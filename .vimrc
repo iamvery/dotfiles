@@ -7,6 +7,7 @@ autocmd FocusLost * :wa        " autosave when file focus is lost
 autocmd FileType gitcommit,markdown setlocal spell
 autocmd FileType gitcommit,markdown set complete+=kspell
 autocmd Filetype docbk,html,xml set formatexpr=SentencePerLine(v:lnum,v:lnum+v:count-1)
+autocmd BufNewFile,BufRead *.ratchet setf html
 
 colorscheme Tomorrow-Night
 
