@@ -32,6 +32,7 @@
 /.ghc
 /.gist-vim
 /.gitk
+/.gnuplot_history
 /.gradle
 /.guard_history
 /.heroku
@@ -62,6 +63,7 @@
 /.npm
 /.npmrc
 /.nvm
+/.octave_hist
 /.oracle_jre_usage
 /.pgadmin_histoqueries
 /.pgpass
@@ -132,6 +134,7 @@
 /jagex_cl_runescape_LIVE.dat
 /jagexappletviewer.preferences
 /jagexcache
+/octave-workspace
 /paros
 /pgadmin.log
 /src
