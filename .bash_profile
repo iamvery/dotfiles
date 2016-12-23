@@ -55,6 +55,7 @@ alias miex='iex -S mix'
 alias pl=swipl
 # http://stevenharman.net/git-clean-delete-already-merged-branches
 alias prune='git fetch --prune && git branch --merged | grep -v "*" | xargs -n 1 git branch -d'
+alias sync_tags='git tag -l | xargs git tag -d && git fetch'
 alias pcpsql='psql -d partcycle-backend_development'
 alias swift='xcrun swift'
 alias pd=pushd
