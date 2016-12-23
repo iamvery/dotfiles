@@ -92,6 +92,14 @@ nmap gV `[v`]
 " insert hash rocket with <c-l>
 imap <c-l> <space>=><space>
 
+" use 'jj' as alternative for esc
+"imap jj <Esc>
+inoremap jk <Esc>
+inoremap Jk <Esc>
+inoremap JK <Esc>
+inoremap jK <Esc>
+"inoremap <Esc> <nop>
+
 " format ugly XML with a shortcut
 nnoremap <leader>x :PrettyXML<cr>
 
