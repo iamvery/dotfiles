@@ -1,0 +1,30 @@
+"*":
+  "atom-beautify":
+    general:
+      _analyticsUserId: "0867e93c-0409-46f1-aeb1-2f59447d7eda"
+    html:
+      indent_size: 2
+  core:
+    disabledPackages: [
+      "linter-htmlhint"
+      "iex"
+      "activate-power-mode"
+    ]
+    packagesWithKeymapsDisabled: []
+    telemetryConsent: "no"
+    themes: [
+      "one-dark-ui"
+      "solarized-dark-syntax"
+    ]
+  editor:
+    invisibles: {}
+  "exception-reporting":
+    userId: "a0ce7e2b-24b7-f358-a9e9-fb106f9e6ef6"
+  "git-diff": {}
+  "package-sync":
+    createOnChange: true
+  "trailing-spaces":
+    enableForIndentation: true
+  welcome:
+    showOnStartup: false
+  whitespace: {}

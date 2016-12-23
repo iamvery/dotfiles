@@ -1,0 +1,17 @@
+packages: [
+  "activate-power-mode"
+  "api-docs"
+  "atom-beautify"
+  "atom-elixir"
+  "autocomplete-paths"
+  "emmet"
+  "iex"
+  "language-elixir"
+  "language-slim"
+  "linter"
+  "linter-csslint"
+  "linter-eslint"
+  "linter-htmlhint"
+  "package-sync"
+  "trailing-spaces"
+]
