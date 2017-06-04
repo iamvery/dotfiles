@@ -1,3 +1,0 @@
-#!/bin/bash
-todays_date=$(date +%Y-%m-%d)
-/usr/bin/curl "$STABLE_ACTIVITIES_URL&start_date=$todays_date" | /usr/local/bin/jq '.[] | .status'
