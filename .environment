@@ -1,5 +1,4 @@
 export EDITOR=vim
-export TMUX_USER=tmux
 export PGHOST=/var/pgsql_socket
 
 PATH=$PATH:$HOME/bin
