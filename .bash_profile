@@ -73,3 +73,6 @@ source ~/.chruby
 source ~/.git-completion.bash
 
 positivity
+
+export NVM_DIR="/Users/jay/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
