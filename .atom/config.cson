@@ -9,12 +9,13 @@
       "linter-htmlhint"
       "iex"
       "activate-power-mode"
+      "vim-mode-plus"
     ]
     packagesWithKeymapsDisabled: []
     telemetryConsent: "no"
     themes: [
       "one-dark-ui"
-      "solarized-dark-syntax"
+      "solarized-light-syntax"
     ]
   editor:
     invisibles: {}
