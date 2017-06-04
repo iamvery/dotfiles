@@ -8,7 +8,10 @@ autocmd FileType gitcommit,markdown setlocal spell
 autocmd FileType gitcommit,markdown set complete+=kspell
 autocmd Filetype docbk,html,xml set formatexpr=SentencePerLine(v:lnum,v:lnum+v:count-1)
 autocmd BufNewFile,BufRead *.ratchet setf html
+autocmd BufNewFile,BufRead *.bolt setf html
 
+"set background=light
+"colorscheme solarized
 colorscheme Tomorrow-Night
 
 let mapleader=","               " set leader key to comma
