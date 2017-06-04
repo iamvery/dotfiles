@@ -22,3 +22,6 @@ echo "**** DONE!"
 echo "**** Install aws..."
 pip install awscli
 echo "**** DONE!"
+
+echo "**** Install Elixir version manager..."
+\curl -sSL https://raw.githubusercontent.com/taylor/kiex/master/install | bash -s
