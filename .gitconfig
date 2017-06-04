@@ -35,6 +35,8 @@
   head = !git l -1
   pr = config --add remote.origin.fetch +refs/pull/*/head:refs/remotes/origin/pr/*
   pf = push --force-with-lease
+  rc = rebase --continue
+  ra = rebase --abort
 
   # Logging
   h = !git head
