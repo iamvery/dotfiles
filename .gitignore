@@ -21,6 +21,7 @@
 /.dropbox
 /.dvdcss
 /.dropbox-master
+/.elm
 /.erlang.cookie
 /.exercism.json
 /.fbPager*
@@ -127,6 +128,7 @@
 /bin/speedtest-cli
 /bin/subl
 /btsync
+/copied over from old macbook pro
 /exercism
 /exit.log
 /floobits
