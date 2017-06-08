@@ -1,6 +1,7 @@
 *.DS_Store
 /.CFUserTextEncoding
 /.Drobo_Dashboard_installer_os_version_check_log.txt
+/.NERDTreeBookmarks
 /.Trash
 /.Xauthority
 /.adobe
@@ -10,6 +11,7 @@
 /.aws
 /.bash_history
 /.bash_sessions
+/.bundle
 /.byebug_hist
 /.cache
 /.camper_van
