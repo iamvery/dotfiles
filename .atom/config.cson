@@ -1,5 +1,7 @@
 "*":
   "atom-beautify":
+    elm:
+      beautify_on_save: true
     general:
       _analyticsUserId: "0867e93c-0409-46f1-aeb1-2f59447d7eda"
     html:
