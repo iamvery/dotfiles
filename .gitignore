@@ -9,6 +9,7 @@
 /.anyconnect
 /.aspell.en.prepl
 /.aws
+/.babel.json
 /.bash_history
 /.bash_sessions
 /.bundle
@@ -26,6 +27,7 @@
 /.elm
 /.erlang.cookie
 /.exercism.json
+/.expo
 /.fbPager*
 /.floorc.json
 /.fontconfig
@@ -96,6 +98,7 @@
 /.wget-hsts
 /.wireshark-etc
 /.wireshark
+/.yarnrc
 /.zcompdump*
 /.znc
 /.zsh-update
