@@ -15,7 +15,7 @@
     telemetryConsent: "no"
     themes: [
       "one-dark-ui"
-      "solarized-light-syntax"
+      "base16-tomorrow-dark-theme"
     ]
   editor:
     invisibles: {}
