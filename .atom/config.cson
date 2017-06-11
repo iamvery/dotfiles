@@ -10,6 +10,8 @@
       "iex"
       "activate-power-mode"
       "vim-mode-plus"
+      "language-elixir"
+      "atom-elixir"
     ]
     packagesWithKeymapsDisabled: []
     telemetryConsent: "no"
