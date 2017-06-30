@@ -1,4 +1,6 @@
 {
-    "workbench.activityBar.visible": false,
-    "editor.renderWhitespace": "all"
+    "editor.renderWhitespace": "all",
+    "editor.tabSize": 2,
+    "files.insertFinalNewline": true,
+    "workbench.activityBar.visible": false
 }
