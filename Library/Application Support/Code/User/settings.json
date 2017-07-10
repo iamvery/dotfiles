@@ -1,6 +1,8 @@
 {
     "editor.renderWhitespace": "all",
     "editor.tabSize": 2,
+    "elm.formatOnSave": true,
     "files.insertFinalNewline": true,
-    "workbench.activityBar.visible": false
+    "workbench.activityBar.visible": false,
+    "files.autoSave": "off"
 }
