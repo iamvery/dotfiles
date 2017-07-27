@@ -28,3 +28,6 @@ if ! which kiex > /dev/null 2>&1; then
   \curl -sSL https://raw.githubusercontent.com/taylor/kiex/master/install | bash -s
   echo "**** DONE!"
 fi
+
+echo "**** Listing Homebrew services..."
+brew services list
