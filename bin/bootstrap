@@ -23,5 +23,8 @@ echo "**** Install aws..."
 pip install awscli
 echo "**** DONE!"
 
-echo "**** Install Elixir version manager..."
-\curl -sSL https://raw.githubusercontent.com/taylor/kiex/master/install | bash -s
+if ! which kiex > /dev/null 2>&1; then
+  echo "**** Install Elixir version manager..."
+  \curl -sSL https://raw.githubusercontent.com/taylor/kiex/master/install | bash -s
+  echo "**** DONE!"
+fi
