@@ -40,10 +40,7 @@ function review()
 
 PROMPT_COMMAND=bash_prompt
 
-alias be='bundle exec'
 alias brewup='brew update && brew upgrade'
-alias gi=git
-alias gti=git
 alias gutd='git checkout master && git pull --ff-only && prune && git checkout - && git rebase master'
 alias wat="fswatch -o . | xargs -n1 -I{} $1"
 alias ip='curl icanhazip.com'
@@ -68,6 +65,7 @@ alias unwip='git reset --soft HEAD^'
 
 alias mts='mix test --stale'
 
+source ~/.aliases
 source ~/.environment
 source ~/.secrets
 source ~/.chruby
