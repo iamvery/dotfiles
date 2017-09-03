@@ -30,5 +30,7 @@ function fish_prompt
   printf (prompt_pwd)' '
 
   set_color yellow
-  echo '» '
+  printf '» '
+
+  set_color normal
 end
