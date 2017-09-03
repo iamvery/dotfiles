@@ -27,8 +27,7 @@ function fish_prompt
   print_git_branch
 
   set_color blue
-  # TODO display "~" instead of /Users/jay
-  printf (pwd)" "
+  printf (prompt_pwd)" "
 
   set_color yellow
   echo "» "
