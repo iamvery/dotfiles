@@ -18,6 +18,7 @@
 /.camper_van
 /.cocoapods
 /.config/configstore/
+/.config/fish/fishd.*
 /.config/heroku/
 /.config/hub
 /.config/yarn/
@@ -79,6 +80,7 @@
 /.psql_history
 /.python_history
 /.rediscli_history
+/.rncache
 /.rnd
 /.rubies
 /.rvm
@@ -99,6 +101,7 @@
 /.vim/.netrwhist
 /.vim/spell/en.utf-8.add.spl
 /.viminfo
+/.vscode
 /.wget-hsts
 /.wireshark-etc
 /.wireshark
@@ -144,9 +147,12 @@
 /jagex_cl_runescape_LIVE.dat
 /jagexappletviewer.preferences
 /jagexcache
+/node_modules
 /octave-workspace
 /paros
 /pgadmin.log
 /src
 /mm.cfg
+/vm stuff
+/yarn.lock
 !.gitkeep
