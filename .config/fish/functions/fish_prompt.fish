@@ -1,7 +1,7 @@
 function print_optional_host
   if test -n "$SSH_CLIENT"
     set_color purple
-    printf (hostname)": "
+    printf (hostname)': '
   end
 end
 
@@ -19,7 +19,7 @@ function print_git_branch
     set_color red
   end
 
-  printf $git_branch" "
+  printf $git_branch' '
 end
 
 function fish_prompt
@@ -27,8 +27,8 @@ function fish_prompt
   print_git_branch
 
   set_color blue
-  printf (prompt_pwd)" "
+  printf (prompt_pwd)' '
 
   set_color yellow
-  echo "» "
+  echo '» '
 end
