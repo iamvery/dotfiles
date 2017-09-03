@@ -1,6 +1,7 @@
 brew "ack"
 brew "bash"
 brew "chruby"
+brew "chruby-fish"
 brew "ctags"
 brew "elixir"
 brew "ffmpeg"
