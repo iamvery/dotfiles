@@ -61,7 +61,6 @@ alias dp=popd
 alias railsup="rails new --template=~/.rails_template.rb $@"
 alias todo="grep --exclude-dir=coverage --exclude-dir=doc --exclude-dir=deps --exclude-dir=.git --exclude-dir=node_modules --recursive --ignore-case --extended-regex 'todo|fixme' ."
 alias wip='git add . && git commit -m "wip [ci skip]"'
-alias unwip='git reset --soft HEAD^'
 
 alias mts='mix test --stale'
 
