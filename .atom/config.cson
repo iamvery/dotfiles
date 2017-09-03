@@ -11,9 +11,20 @@
       "linter-htmlhint"
       "iex"
       "activate-power-mode"
-      "vim-mode-plus"
       "language-elixir"
       "atom-elixir"
+      "vim-mode-plus"
+      "prettier-atom"
+    ]
+    ignoredNames: [
+      ".git"
+      ".hg"
+      ".svn"
+      ".DS_Store"
+      "._*"
+      "Thumbs.db"
+      "desktop.ini"
+      "node_modules"
     ]
     packagesWithKeymapsDisabled: []
     telemetryConsent: "no"
@@ -26,8 +37,14 @@
   "exception-reporting":
     userId: "a0ce7e2b-24b7-f358-a9e9-fb106f9e6ef6"
   "git-diff": {}
+  "linter-ui-default":
+    panelHeight: 69
   "package-sync":
     createOnChange: true
+  "platformio-ide-terminal":
+    ansiColors:
+      normal:
+        black: "#002c38"
   "trailing-spaces":
     enableForIndentation: true
   welcome:

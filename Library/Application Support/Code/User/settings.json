@@ -4,5 +4,7 @@
     "elm.formatOnSave": true,
     "files.insertFinalNewline": true,
     "workbench.activityBar.visible": false,
-    "files.autoSave": "off"
+    "files.autoSave": "off",
+    "eslint.autoFixOnSave": true,
+    "window.zoomLevel": 0
 }
