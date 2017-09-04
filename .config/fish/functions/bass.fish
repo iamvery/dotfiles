@@ -1,1 +1,1 @@
-/Users/jay/.config/fish/plugins/bass/functions/bass.fish
+../plugins/bass/functions/bass.fish
