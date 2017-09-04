@@ -82,3 +82,6 @@
 [submodule ".vim/bundle/elm-vim"]
 	path = .vim/bundle/elm-vim
 	url = git://github.com/ElmCast/elm-vim.git
+[submodule ".config/fish/plugins/bass"]
+	path = .config/fish/plugins/bass
+	url = git://github.com/edc/bass.git
