@@ -1,0 +1,1 @@
+/Users/jay/.config/fish/plugins/bass/functions/__bass.py
