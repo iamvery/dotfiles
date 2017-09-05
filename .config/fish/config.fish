@@ -5,4 +5,4 @@ alias wip='git add . ; and git commit -m "wip [ci skip]"'
 source ~/.aliases
 
 source /usr/local/opt/fry/share/fry/fry.fish
-fry 2.4.1
+fry use 2.4 > /dev/null
