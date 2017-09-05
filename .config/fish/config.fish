@@ -4,6 +4,5 @@ alias wip='git add . ; and git commit -m "wip [ci skip]"'
 
 source ~/.aliases
 
-source /usr/local/share/chruby/chruby.fish
-chruby 2.4.1
-source /usr/local/share/chruby/auto.fish
+source /usr/local/opt/fry/share/fry/fry.fish
+fry 2.4.1
