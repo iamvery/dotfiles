@@ -50,6 +50,7 @@ alias json='python -m json.tool'
 # http://solidfoundationwebdev.com/blog/posts/create-an-bash-function-to-open-latest-active-record-migration
 alias lm='vim db/migrate/$(ls db/migrate | sort | tail -1)'
 alias miex='iex -S mix'
+alias mts='mix test --stale'
 alias pl=swipl
 # http://stevenharman.net/git-clean-delete-already-merged-branches
 alias prune='git fetch --prune && git branch --merged | grep -v "*" | xargs -n 1 git branch -d'
@@ -61,8 +62,6 @@ alias dp=popd
 alias railsup="rails new --template=~/.rails_template.rb $@"
 alias todo="grep --exclude-dir=coverage --exclude-dir=doc --exclude-dir=deps --exclude-dir=.git --exclude-dir=node_modules --recursive --ignore-case --extended-regex 'todo|fixme' ."
 alias wip='git add . && git commit -m "wip [ci skip]"'
-
-alias mts='mix test --stale'
 
 source ~/.aliases
 source ~/.environment
