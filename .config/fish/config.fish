@@ -1,3 +1,7 @@
+set --export PGHOST '/var/pgsql_socket'
+
+set PATH '/Applications/Postgres.app/Contents/Versions/latest/bin' $PATH
+
 # http://solidfoundationwebdev.com/blog/posts/create-an-bash-function-to-open-latest-active-record-migration
 alias lm='vim db/migrate/(ls db/migrate | sort | tail -1)'
 # http://stevenharman.net/git-clean-delete-already-merged-branches
