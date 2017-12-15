@@ -38,6 +38,7 @@ set mouse=a             " enable mouse in all modes
 set noerrorbells        " don't use any bells for errors
 set novisualbell        " don't use any visual flashes for errors
 set nowrap              " do not wrap lines
+set number              " show current line number
 set relativenumber      " show relative line numbers
 set shiftwidth=2        " number of spaces for autoindent
 set smartcase           " ignore case when the search patter contains only lowercase letters
@@ -128,6 +129,9 @@ map <Leader>a :call RunAllSpecs()<CR>
 
 map <Leader>md :call MarkedPreview()<CR>
 map <Leader>m :!mix test<CR>
+
+" Toggle relative line numbers
+map <leader>. :set relativenumber!<cr>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " PROMOTE VARIABLE TO RSPEC LET
