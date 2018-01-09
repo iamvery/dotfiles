@@ -15,3 +15,5 @@ source ~/.aliases
 
 source /usr/local/opt/fry/share/fry/fry.fish
 fry use 2.4 > /dev/null
+
+#bass source ~/.nvm/nvm.sh
