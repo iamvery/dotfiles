@@ -138,12 +138,12 @@ map <leader>. :set relativenumber!<cr>
 " https://github.com/stevenharman/config/blob/c11f6944c1752a3aa36b85ef0ff5a88a30cd8d09/vimrc.symlink#L333-L343
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 function! PromoteToLet()
-  :normal! dd
-  :normal! P
-  :.s/\(\w\+\) = \(.*\)$/let(:\1) { \2 }/
-  :normal ==
+  normal! dd
+  normal! P
+  .s/\(\w\+\) = \(.*\)$/let(:\1) { \2 }/
+  normal ==
 endfunction
-:command! PromoteToLet :call PromoteToLet()
-:map <leader>p :PromoteToLet<cr>
+command! PromoteToLet :call PromoteToLet()
+map <leader>p :PromoteToLet<cr>
 
 set secure
