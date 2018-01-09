@@ -147,3 +147,18 @@ command! PromoteToLet :call PromoteToLet()
 map <leader>p :PromoteToLet<cr>
 
 set secure
+
+let g:lightcolors = 0
+function! ToggleColors()
+  if g:lightcolors
+    unset background
+    colorscheme Tomorrow-Night
+    let g:lightcolors = 1
+  else
+    set background=light
+    colorscheme solarized
+    let g:lightcolors = 0
+  endif
+endfunction
+command! ToggleColors :call ToggleColors()
+map <leader>c :ToggleColors<cr>
