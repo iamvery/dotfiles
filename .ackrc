@@ -8,6 +8,7 @@
  --ignore-dir=deps
  --ignore-dir=doc
  --ignore-dir=log
+ --ignore-dir=elm-stuff
  --ignore-dir=node_modules
  --ignore-dir=rails
  --ignore-dir=tmp
