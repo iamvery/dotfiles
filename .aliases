@@ -1,5 +1,5 @@
 alias be='bundle exec'
-alias endurance='ssh -L 5000:localhost:5000 bnr@endurance.local'
+alias endurance='ssh -L 5000:localhost:5000 -L 4000:localhost:4000 bnr@endurance.local'
 alias gi=git
 alias gti=git
 alias unwip='git reset --soft HEAD^'
