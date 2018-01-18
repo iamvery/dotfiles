@@ -13,7 +13,7 @@ phrases = [
   "It's not what you look at that matters, it's what you see",
   "You can do anything, but not everything",
   "You've got this",
-  "We cannot solve our problems with the same thinking we used when we created them"
+  "We cannot solve our problems with the same thinking we used when we created them",
 ]
 
 given_index = ARGV.first
