@@ -1,6 +1,6 @@
 --skip-bundle
 --skip-keeps
 --skip-spring
---skip-test-unit
+--skip-test
 --skip-turbolinks
 --database=postgresql
