@@ -1,10 +1,11 @@
 {
     "editor.renderWhitespace": "all",
     "editor.tabSize": 2,
-    "elm.formatOnSave": true,
     "files.insertFinalNewline": true,
     "workbench.activityBar.visible": false,
     "files.autoSave": "off",
-    "eslint.autoFixOnSave": true,
-    "window.zoomLevel": 0
+    "window.zoomLevel": 0,
+    "[elm]": {
+        "editor.formatOnSave": true
+    }
 }
