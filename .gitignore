@@ -16,6 +16,7 @@
 /.byebug_hist
 /.cache
 /.camper_van
+/.chromedriver-helper/
 /.cocoapods
 /.config/configstore/
 /.config/fish/fishd.*
@@ -34,6 +35,7 @@
 /.exercism.json
 /.expo
 /.fbPager*
+/.fixops.yml
 /.floorc.json
 /.fontconfig
 /.fop
@@ -42,6 +44,7 @@
 /.gist-vim
 /.gitk
 /.gnuplot_history
+/.gnupg/
 /.gradle
 /.guard_history
 /.heroku
@@ -50,6 +53,7 @@
 /.hitch_pairs
 /.hitchrc
 /.ievms
+/.invoker/
 /.io_history
 /.irb-history
 /.jagex_cache_32
@@ -76,6 +80,7 @@
 /.oracle_jre_usage
 /.pgadmin_histoqueries
 /.pgpass
+/.phantomjs/
 /.pry_history
 /.psql_history
 /.python_history
