@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# https://dockyard.com/blog/2018/05/11/tell-me-when-it-s-finished
+afplay ~/.dotfiles/sounds/yay.mp3 -v -0.2 &
+exit 0
