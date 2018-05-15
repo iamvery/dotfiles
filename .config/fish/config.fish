@@ -14,6 +14,6 @@ alias wip='git add . ; and git commit -m "wip [ci skip]"'
 source ~/.aliases
 
 source /usr/local/opt/fry/share/fry/fry.fish
-fry use 2.4 > /dev/null
+fry use 2.5 > /dev/null
 
 #bass source ~/.nvm/nvm.sh
