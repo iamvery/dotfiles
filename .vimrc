@@ -162,3 +162,16 @@ function! ToggleColors()
 endfunction
 command! ToggleColors :call ToggleColors()
 map <leader>c :ToggleColors<cr>
+
+let g:relativenumbers = 1
+function! ToggleRelativeNumbers()
+  if g:relativenumbers
+    set norelativenumber
+    let g:relativenumbers = 0
+  else
+    set relativenumber
+    let g:relativenumbers = 1
+  endif
+endfunction
+command! ToggleRelativeNumbers :call ToggleRelativeNumbers()
+map <leader>N :ToggleRelativeNumbers<cr>
