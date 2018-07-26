@@ -85,3 +85,6 @@
 [submodule ".config/fish/plugins/bass"]
 	path = .config/fish/plugins/bass
 	url = git://github.com/edc/bass.git
+[submodule ".asdf"]
+	path = .asdf
+	url = git://github.com/asdf-vm/asdf.git
