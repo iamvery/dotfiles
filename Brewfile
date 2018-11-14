@@ -35,6 +35,3 @@ brew "tree"
 brew "vim"
 brew "youtube-dl"
 brew "znc"
-
-tap "igas/fry"
-brew "fry"
