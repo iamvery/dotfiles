@@ -12,6 +12,7 @@ alias gutd='git checkout master ; and git pull --ff-only ; and prune ; and git c
 alias wip='git add . ; and git commit -m "wip [ci skip]"'
 
 source ~/.aliases
+source ~/.secrets.fish
 
 #bass source ~/.nvm/nvm.sh
 

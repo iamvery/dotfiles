@@ -92,6 +92,7 @@
 /.rubies
 /.rvm
 /.secrets
+/.secrets.fish
 /.sh_history
 /.sqlite_history
 /.ssh
