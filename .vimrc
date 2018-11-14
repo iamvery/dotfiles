@@ -1,4 +1,13 @@
-execute pathogen#infect()
+call plug#begin()
+Plug 'airblade/vim-gitgutter'
+Plug 'altercation/vim-colors-solarized'
+Plug 'chriskempson/vim-tomorrow-theme'
+Plug 'kien/ctrlp.vim'
+Plug 'mattn/gist-vim'
+Plug 'scrooloose/nerdtree'
+Plug 'tpope/vim-fugitive'
+Plug 'vim-syntastic/syntastic'
+call plug#end()
 
 syntax on                 " show synatx highlighting
 filetype plugin indent on

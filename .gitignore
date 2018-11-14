@@ -107,6 +107,7 @@
 /.vim/_backup
 /.vim/_temp
 /.vim/.netrwhist
+/.vim/plugged
 /.vim/spell/en.utf-8.add.spl
 /.viminfo
 /.vscode
