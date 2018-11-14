@@ -19,6 +19,7 @@
 /.chromedriver-helper/
 /.cocoapods
 /.config/configstore/
+/.config/exercism/user.json
 /.config/fish/fishd.*
 /.config/heroku/
 /.config/hub
@@ -114,6 +115,7 @@
 /.yarnrc
 /.zcompdump*
 /.znc
+/.zoomus
 /.zsh-update
 /.zsh_history
 /Applications
@@ -141,6 +143,7 @@
 /bin/deis
 /bin/deisctl
 /bin/ngrok
+/bin/op
 /bin/reattach-to-user-namespace
 /bin/the-stable
 /bin/speedtest-cli
