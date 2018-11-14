@@ -10,8 +10,6 @@ autocmd Filetype docbk,html,xml set formatexpr=SentencePerLine(v:lnum,v:lnum+v:c
 autocmd BufNewFile,BufRead *.ratchet setf html
 autocmd BufNewFile,BufRead *.bolt setf html
 
-"set background=light
-"colorscheme solarized
 colorscheme Tomorrow-Night
 
 let mapleader=","               " set leader key to comma
@@ -150,14 +148,14 @@ set secure
 
 let g:lightcolors = 0
 function! ToggleColors()
-  if g:lightcolors
-    unset background
+  if g:lightcolors == 1
+    "unset background
     colorscheme Tomorrow-Night
-    let g:lightcolors = 1
+    let g:lightcolors = 0
   else
     set background=light
     colorscheme solarized
-    let g:lightcolors = 0
+    let g:lightcolors = 1
   endif
 endfunction
 command! ToggleColors :call ToggleColors()
