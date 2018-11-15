@@ -26,6 +26,10 @@ colorscheme Tomorrow-Night
 
 let mapleader=","               " set leader key to comma
 let g:ackprg = 'rg --vimgrep'
+let g:ale_fixers = {
+\  '*': ['remove_trailing_lines', 'trim_whitespace'],
+\  'ruby': ['rubocop'],
+\}
 let g:ctrlp_working_path_mode=0 " don't manage working directory
 let g:ctrlp_jump_to_buffer=0    " disable jumping to already open buffer
 let g:gist_clip_command='pbcopy'     " gist-vim: set clipboard command
