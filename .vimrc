@@ -5,6 +5,7 @@ Plug 'chriskempson/vim-tomorrow-theme'
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'mattn/gist-vim'
+Plug 'mileszs/ack.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-fugitive'
 Plug 'vim-syntastic/syntastic'
@@ -23,6 +24,7 @@ autocmd BufNewFile,BufRead *.bolt setf html
 colorscheme Tomorrow-Night
 
 let mapleader=","               " set leader key to comma
+let g:ackprg = 'rg --vimgrep'
 let g:ctrlp_working_path_mode=0 " don't manage working directory
 let g:ctrlp_jump_to_buffer=0    " disable jumping to already open buffer
 let g:gist_clip_command='pbcopy'     " gist-vim: set clipboard command
