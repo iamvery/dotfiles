@@ -5,4 +5,6 @@ alias gi=git
 alias gti=git
 alias rs='ruby -run -e httpd . -p 5000'
 alias unwip='git reset --soft HEAD^'
+alias vi=nvim
+alias vim=nvim
 alias vpl="env FORCE_LOCAL_PACT='$1' RAILS_ENV=test bundle exec rake pact:verify"
