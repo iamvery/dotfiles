@@ -2,7 +2,8 @@ call plug#begin()
 Plug 'airblade/vim-gitgutter'
 Plug 'altercation/vim-colors-solarized'
 Plug 'chriskempson/vim-tomorrow-theme'
-Plug 'kien/ctrlp.vim'
+Plug '/usr/local/opt/fzf'
+Plug 'junegunn/fzf.vim'
 Plug 'mattn/gist-vim'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-fugitive'
@@ -139,6 +140,8 @@ map <Leader>m :!mix test<CR>
 
 " Toggle relative line numbers
 map <leader>. :set relativenumber!<cr>
+
+map <C-p> :Files<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " PROMOTE VARIABLE TO RSPEC LET
