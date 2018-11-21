@@ -1,9 +1,3 @@
-[submodule ".vim/bundle/vim-swift"]
-	path = .vim/bundle/vim-swift
-	url = git://github.com/toyamarinyon/vim-swift.git
-[submodule ".vim.bundle/vim-ruby-refactoring"]
-	path = .vim.bundle/vim-ruby-refactoring
-	url = git://github.com/ecomba/vim-ruby-refactoring.git
 [submodule ".config/fish/plugins/bass"]
 	path = .config/fish/plugins/bass
 	url = git://github.com/edc/bass.git
