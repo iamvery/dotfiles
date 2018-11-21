@@ -9,6 +9,7 @@ Plug 'mattn/gist-vim'
 Plug 'mileszs/ack.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rhubarb'
 Plug 'vim-syntastic/syntastic'
 Plug 'w0rp/ale'
 call plug#end()
