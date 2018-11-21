@@ -1,9 +1,6 @@
 [submodule ".vim/bundle/vim-swift"]
 	path = .vim/bundle/vim-swift
 	url = git://github.com/toyamarinyon/vim-swift.git
-[submodule ".vim/bundle/swift.vim"]
-	path = .vim/bundle/swift.vim
-	url = git://github.com/Keithbsmiley/swift.vim.git
 [submodule ".vim.bundle/vim-ruby-refactoring"]
 	path = .vim.bundle/vim-ruby-refactoring
 	url = git://github.com/ecomba/vim-ruby-refactoring.git
