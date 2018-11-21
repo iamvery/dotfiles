@@ -64,6 +64,7 @@ set splitbelow          " split new window below current
 set tabstop=2           " number of spaces for <Tab> in file counts
 set title               " set window title
 set ttyfast             " use a fast terminal connection
+set updatetime=500      " configured for gitgutter
 
 set backupdir=~/.vim/_backup//             " directory for backup files
 set directory=~/.vim/_temp//               " directory for swap files
