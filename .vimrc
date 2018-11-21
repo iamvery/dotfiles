@@ -44,7 +44,6 @@ let g:ctrlp_custom_ignore = {
 set autoread            " automatically re-read file changed outside of vim
 set colorcolumn=80,100  " add column at 80 and 100 characters
 set expandtab           " use spaces for <Tab>
-set exrc                " enbale project specific configuration
 set foldlevelstart=99   " don't fold anything by default
 set foldmethod=indent   " "collapse" text blocks based on indentation
 set gdefault            " use global substitution automatically
@@ -165,7 +164,8 @@ endfunction
 command! PromoteToLet :call PromoteToLet()
 map <leader>p :PromoteToLet<cr>
 
-set secure
+set exrc   " enable project specific configuration
+set secure " but make sure that unsafe commands cannot be run
 
 let g:lightcolors = 0
 function! ToggleColors()
