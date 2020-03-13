@@ -2,20 +2,32 @@ call plug#begin()
 Plug 'airblade/vim-gitgutter'
 Plug 'altercation/vim-colors-solarized'
 Plug 'chriskempson/vim-tomorrow-theme'
+Plug 'elixir-editors/vim-elixir'
+Plug 'ElmCast/elm-vim'
+Plug 'fatih/vim-go'
 Plug 'itchyny/lightline.vim'
+Plug 'jceb/vim-orgmode'
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'mattn/gist-vim'
+Plug 'mattn/webapi-vim'
 Plug 'mileszs/ack.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
 Plug 'vim-syntastic/syntastic'
 Plug 'w0rp/ale'
+Plug 'wincent/terminus'
+"wildfire.vim
 call plug#end()
 
 syntax on                 " show synatx highlighting
 filetype plugin indent on
+
+function! SentencePerLine(start, end)
+    silent execute a:start.','.a:end.'s/\n\s\+/ /'
+    silent execute 's/[.!?]\zs /\r/'
+endfunction
 
 autocmd FocusLost * :wa        " autosave when file focus is lost
 autocmd FileType gitcommit,markdown setlocal spell
@@ -44,6 +56,7 @@ let g:ctrlp_custom_ignore = {
 set autoread            " automatically re-read file changed outside of vim
 set colorcolumn=80,100  " add column at 80 and 100 characters
 set expandtab           " use spaces for <Tab>
+"set ff=unix             " set default file type (for line endings)
 set foldlevelstart=99   " don't fold anything by default
 set foldmethod=indent   " "collapse" text blocks based on indentation
 set gdefault            " use global substitution automatically
@@ -72,6 +85,9 @@ set undodir=~/.vim/_temp//                 " directory for undo files
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*  " ignore these patters for wildcard matching
 
 match ErrorMsg '\s\+$'  " highlight trailing whitespace as error
+
+highlight clear SpellCap
+highlight link SpellCap Underlined
 
 """"""""""""""""
 "" KEY MAPPINGS
