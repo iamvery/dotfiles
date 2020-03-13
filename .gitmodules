@@ -4,3 +4,6 @@
 [submodule ".asdf"]
 	path = .asdf
 	url = git://github.com/asdf-vm/asdf.git
+[submodule ".emacs.d"]
+	path = .emacs.d
+	url = git://github.com/hlissner/doom-emacs
