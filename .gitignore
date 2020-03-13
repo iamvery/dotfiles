@@ -17,6 +17,7 @@
 /.cache
 /.camper_van
 /.chromedriver-helper/
+/.circleci
 /.cocoapods
 /.config/configstore/
 /.config/exercism/user.json
@@ -58,6 +59,7 @@
 /.invoker/
 /.io_history
 /.irb-history
+/.irb_history
 /.jagex_cache_32
 /.jssc
 /.junique
@@ -94,6 +96,7 @@
 /.secrets
 /.secrets.fish
 /.sh_history
+/.solargraph
 /.sqlite_history
 /.ssh
 /.subversion
@@ -111,6 +114,7 @@
 /.vim/spell/en.utf-8.add.spl
 /.viminfo
 /.vscode
+/.webdrivers
 /.wget-hsts
 /.wireshark-etc
 /.wireshark
@@ -124,6 +128,7 @@
 /Backups
 /Calibre Library
 /Code
+/Creative\ Cloud\ Files
 /Desktop
 /Documents
 /Downloads
@@ -155,6 +160,7 @@
 /exercism
 /exit.log
 /floobits
+/go
 /jagex_cl_runescape_LIVE.dat
 /jagexappletviewer.preferences
 /jagexcache
@@ -164,6 +170,7 @@
 /pgadmin.log
 /src
 /mm.cfg
+/time_warrior
 /vm stuff
 /yarn.lock
 !.gitkeep
