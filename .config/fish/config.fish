@@ -4,6 +4,10 @@ set --export RIPGREP_CONFIG_PATH $HOME/.ripgreprc
 
 set PATH $PATH $HOME/bin
 set PATH '/Applications/Postgres.app/Contents/Versions/latest/bin' $PATH
+set PATH $PATH $HOME/go/bin
+# https://github.com/asdf-vm/asdf/pull/303, https://github.com/thoughtbot/dotfiles/issues/587
+set PATH $HOME/.asdf/bin $PATH
+set PATH $HOME/.asdf/shims $PATH
 
 # http://solidfoundationwebdev.com/blog/posts/create-an-bash-function-to-open-latest-active-record-migration
 alias lm='vim db/migrate/(ls db/migrate | sort | tail -1)'
