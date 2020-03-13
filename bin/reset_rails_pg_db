@@ -2,6 +2,7 @@
 set -e
 
 dbname=$1
+echo "Resetting: $dbname"
 dropdb "$dbname"
 createdb "$dbname"
 psql --dbname="$dbname" < db/structure.sql

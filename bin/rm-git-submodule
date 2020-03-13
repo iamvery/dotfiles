@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+set -e
+path="$1"
+# https://stackoverflow.com/questions/1260748/how-do-i-remove-a-submodule
+git submodule deinit "$path"
+rm -rf ".git/modules/$path"
+git rm "$path"
