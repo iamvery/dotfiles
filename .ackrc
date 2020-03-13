@@ -11,6 +11,7 @@
  --ignore-dir=elm-stuff
  --ignore-dir=node_modules
  --ignore-dir=rails
+ --ignore-dir=sorbet
  --ignore-dir=tmp
  --ignore-dir=coverage
  --ignore-dir=vendor
