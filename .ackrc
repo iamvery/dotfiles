@@ -10,6 +10,7 @@
  --ignore-dir=log
  --ignore-dir=elm-stuff
  --ignore-dir=node_modules
+ --ignore-dir=node_modules/
  --ignore-dir=rails
  --ignore-dir=sorbet
  --ignore-dir=tmp

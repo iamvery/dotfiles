@@ -13,8 +13,17 @@ set PATH $HOME/.asdf/shims $PATH
 alias lm='vim db/migrate/(ls db/migrate | sort | tail -1)'
 # http://stevenharman.net/git-clean-delete-already-merged-branches
 alias prune='git fetch --prune ; and git branch --merged | grep -v "*" | xargs -n 1 git branch -d'
-alias gutd='git checkout master ; and git pull --ff-only ; and prune ; and git checkout - ; and git rebase master'
-alias wip='git add . ; and git commit -m "wip [ci skip]"'
+alias wip='git add . ; and git commit -nm "wip [ci skip]"'
+abbr be bundle exec
+
+function gutd --argument-names branch
+  set -q $branch; and set branch main
+  git checkout $branch
+  and git pull --ff-only
+  and prune
+  and git checkout -
+  and git rebase $branch
+end
 
 source ~/.aliases
 source ~/.secrets.fish

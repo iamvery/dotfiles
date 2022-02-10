@@ -15,9 +15,11 @@ Plug 'mileszs/ack.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
+Plug 'tpope/vim-surround'
 Plug 'vim-syntastic/syntastic'
 Plug 'w0rp/ale'
 Plug 'wincent/terminus'
+Plug 'zorab47/procfile.vim'
 "wildfire.vim
 call plug#end()
 
@@ -40,17 +42,19 @@ colorscheme Tomorrow-Night
 
 let mapleader=","               " set leader key to comma
 let g:ackprg = 'rg --vimgrep'
+let g:ale_linters = {'ruby': ['standardrb']}
 let g:ale_fixers = {
 \  '*': ['remove_trailing_lines', 'trim_whitespace'],
-\  'ruby': ['rubocop'],
+\  'ruby': ['standardrb','rubocop'],
 \}
+let g:ale_fix_on_save = 0
 let g:ctrlp_working_path_mode=0 " don't manage working directory
 let g:ctrlp_jump_to_buffer=0    " disable jumping to already open buffer
 let g:gist_clip_command='pbcopy'     " gist-vim: set clipboard command
 let g:gist_open_browser_after_post=1 " gist-vim: open gist in browser
 let g:rspec_command="Dispatch bundle exec rspec {spec}" " vim-rspec: use with vim-dispatch
 let g:ctrlp_custom_ignore = {
-\  'dir': '\v(_build|node_modules|deps)$',
+\  'dir': '\v(_build\|node_modules\|deps\|fixtures\/vcr_cassettes)$',
 \}
 
 set autoread            " automatically re-read file changed outside of vim
@@ -141,10 +145,10 @@ inoremap jK <Esc>
 nnoremap <leader>x :PrettyXML<cr>
 
 " view blame for line
-nnoremap <leader>b :Gblame<cr>
+nnoremap <leader>b :Git blame<cr>
 
 " browse line on github
-nnoremap <leader><S-b> :Gbrowse<cr>
+nnoremap <leader><S-b> :GBrowse<cr>
 
 " Bubble single lines
 nmap <C-k> ddkP

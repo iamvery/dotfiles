@@ -4,8 +4,13 @@
     "files.insertFinalNewline": true,
     "workbench.activityBar.visible": false,
     "files.autoSave": "off",
-    "window.zoomLevel": 0,
     "[elm]": {
         "editor.formatOnSave": true
-    }
+    },
+    "liveshare.authenticationProvider": "GitHub",
+    "workbench.startupEditor": "welcomePage",
+    "ruby.lint": {
+        "standard": true
+    },
+    "ruby.useLanguageServer": true
 }

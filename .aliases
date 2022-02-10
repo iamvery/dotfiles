@@ -3,6 +3,7 @@ alias endurance='ssh -L 5000:localhost:5000 -L 4000:localhost:4000 bnr@endurance
 alias first_and_last='sed -e 1b -e \'$!d\''
 alias gi=git
 alias gti=git
+alias awake='caffeinate -dims'
 alias rs='ruby -run -e httpd . -p 5000'
 alias seinfeld='curl -sL "$SEINFELD_URL" | sed \'3q;d\' | xargs -n 1 open -a "Google Chrome"'
 alias the_office='curl -sL "$OFFICE_URL" | sed \'5q;d\' | xargs -n 1 open -a "Google Chrome"'
@@ -11,3 +12,4 @@ alias unwip='git reset --soft HEAD^'
 alias vi=nvim
 alias vim=nvim
 alias vpl="env FORCE_LOCAL_PACT='$1' RAILS_ENV=test bundle exec rake pact:verify"
+alias whitespace="sed -i '' -E 's/[[:space:]]*\$//' **/*.rb" #find ./ -type f -name '*.rb' -exec sed -i '' -E 's\/[[:space:]]*\$\/\/' {} \;"

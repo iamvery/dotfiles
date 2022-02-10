@@ -34,7 +34,8 @@
   pop = stash pop
   head = !git l -1
   pr = config --add remote.origin.fetch +refs/pull/*/head:refs/remotes/origin/pr/*
-  pf = push --force-with-lease
+  p = push --set-upstream
+  pf = push --set-upstream --force-with-lease
   rc = rebase --continue
   ra = rebase --abort
 
@@ -48,3 +49,5 @@
 	account = bnr
 [commit]
 	verbose = true
+[pull]
+	ff = only

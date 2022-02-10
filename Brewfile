@@ -37,3 +37,7 @@ brew "tree"
 brew "vim"
 brew "youtube-dl"
 brew "znc"
+
+# https://github.com/shopify/toxiproxy
+tap "shopify/shopify"
+brew "toxiproxy"
