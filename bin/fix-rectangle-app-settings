@@ -1,0 +1,1 @@
+defaults write com.knollsoft.Rectangle centeredDirectionalMove -int 2
