@@ -3,6 +3,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'altercation/vim-colors-solarized'
 Plug 'chriskempson/vim-tomorrow-theme'
 Plug 'elixir-editors/vim-elixir'
+Plug 'mhinz/vim-mix-format'
 Plug 'ElmCast/elm-vim'
 Plug 'fatih/vim-go'
 Plug 'itchyny/lightline.vim'
@@ -48,6 +49,7 @@ let g:ale_fixers = {
 \  'ruby': ['standardrb','rubocop'],
 \}
 let g:ale_fix_on_save = 0
+let g:mix_format_on_save = 1
 let g:ctrlp_working_path_mode=0 " don't manage working directory
 let g:ctrlp_jump_to_buffer=0    " disable jumping to already open buffer
 let g:gist_clip_command='pbcopy'     " gist-vim: set clipboard command
