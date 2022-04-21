@@ -1,6 +1,7 @@
 set --export PGHOST '/var/pgsql_socket'
 set --export EDITOR 'vim'
 set --export RIPGREP_CONFIG_PATH $HOME/.ripgreprc
+set --export FZF_DEFAULT_COMMAND 'rg --files'
 
 set PATH $PATH $HOME/bin
 set PATH '/Applications/Postgres.app/Contents/Versions/latest/bin' $PATH
