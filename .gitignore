@@ -25,6 +25,7 @@
 /.config/heroku/
 /.config/hub
 /.config/pianobar
+/.config/iterm2/
 /.config/yarn/
 /.cups
 /.deis
@@ -82,6 +83,7 @@
 /.nvm
 /.octave_hist
 /.oracle_jre_usage
+/.pgadmin/
 /.pgadmin_histoqueries
 /.pgpass
 /.phantomjs/
@@ -124,6 +126,7 @@
 /.zoomus
 /.zsh-update
 /.zsh_history
+/.zsh_sessions/
 /Applications
 /Backups
 /Calibre Library
