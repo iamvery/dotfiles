@@ -1,9 +1,9 @@
 [submodule ".config/fish/plugins/bass"]
 	path = .config/fish/plugins/bass
-	url = git://github.com/edc/bass.git
+	url = git@github.com:edc/bass.git
 [submodule ".asdf"]
 	path = .asdf
-	url = git://github.com/asdf-vm/asdf.git
+	url = git@github.com:asdf-vm/asdf.git
 [submodule ".emacs.d"]
 	path = .emacs.d
-	url = git://github.com/hlissner/doom-emacs
+	url = git@github.com:hlissner/doom-emacs
