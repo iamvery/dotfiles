@@ -5,7 +5,7 @@
 if ! which brew > /dev/null 2>&1; then
   # Install http://brew.sh
   echo "**** Installing brew..."
-  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
   echo "**** DONE!"
 fi
 
@@ -13,21 +13,6 @@ echo "**** Install brew packages..."
 brew tap homebrew/bundle
 brew bundle
 echo "**** DONE!"
-
-echo "**** Install gems..."
-gem install bundler
-bundle install
-echo "**** DONE!"
-
-echo "**** Install aws..."
-pip install awscli
-echo "**** DONE!"
-
-if ! which kiex > /dev/null 2>&1; then
-  echo "**** Install Elixir version manager..."
-  \curl -sSL https://raw.githubusercontent.com/taylor/kiex/master/install | bash -s
-  echo "**** DONE!"
-fi
 
 echo "**** Listing Homebrew services..."
 brew services list
