@@ -55,9 +55,6 @@ let g:ctrlp_jump_to_buffer=0    " disable jumping to already open buffer
 let g:gist_clip_command='pbcopy'     " gist-vim: set clipboard command
 let g:gist_open_browser_after_post=1 " gist-vim: open gist in browser
 let g:rspec_command="Dispatch bundle exec rspec {spec}" " vim-rspec: use with vim-dispatch
-let g:ctrlp_custom_ignore = {
-\  'dir': '\v(_build\|node_modules\|deps\|fixtures\/vcr_cassettes)$',
-\}
 
 set autoread            " automatically re-read file changed outside of vim
 set colorcolumn=80,100  " add column at 80 and 100 characters
@@ -172,6 +169,7 @@ map <Leader>m :!mix test<CR>
 " Toggle relative line numbers
 map <leader>. :set relativenumber!<cr>
 
+" Map ctrl+p to fzf command
 map <C-p> :Files<CR>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
