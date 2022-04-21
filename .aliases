@@ -13,3 +13,6 @@ alias vi=nvim
 alias vim=nvim
 alias vpl="env FORCE_LOCAL_PACT='$1' RAILS_ENV=test bundle exec rake pact:verify"
 alias whitespace="sed -i '' -E 's/[[:space:]]*\$//' **/*.rb" #find ./ -type f -name '*.rb' -exec sed -i '' -E 's\/[[:space:]]*\$\/\/' {} \;"
+alias start-db-tunnel="ssh -i $TUNNEL_SSH_KEY -NvL 5434:$TUNNEL_DB_SERVER:5432 $TUNNEL_EXTERNAL_SERVER"
+alias psql-tunnel="psql -h localhost -p 5433 -U $TUNNEL_DB_USER -d $TUNNEL_DB"
+alias rtw='fswatch lib test | mix test --listen-on-stdin'
