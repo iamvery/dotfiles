@@ -6,8 +6,8 @@ function print_optional_host
 end
 
 function print_git_branch
-  set git_status (git status --porcelain ^ /dev/null)
-  set git_branch (git rev-parse --abbrev-ref HEAD ^ /dev/null)
+  set git_status (git status --porcelain 2> /dev/null)
+  set git_branch (git rev-parse --abbrev-ref HEAD 2> /dev/null)
 
   if test $status -ne 0
     return
