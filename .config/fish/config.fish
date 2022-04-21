@@ -31,3 +31,4 @@ source ~/.secrets.fish
 #bass source ~/.nvm/nvm.sh
 
 source ~/.asdf/asdf.fish
+eval "$(/opt/homebrew/bin/brew shellenv)"
