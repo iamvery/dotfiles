@@ -3,7 +3,6 @@ Plug 'airblade/vim-gitgutter'
 Plug 'altercation/vim-colors-solarized'
 Plug 'chriskempson/vim-tomorrow-theme'
 Plug 'elixir-editors/vim-elixir'
-Plug 'mhinz/vim-mix-format'
 Plug 'ElmCast/elm-vim'
 Plug 'fatih/vim-go'
 Plug 'itchyny/lightline.vim'
@@ -39,17 +38,26 @@ autocmd Filetype docbk,html,xml set formatexpr=SentencePerLine(v:lnum,v:lnum+v:c
 autocmd BufNewFile,BufRead *.ratchet setf html
 autocmd BufNewFile,BufRead *.bolt setf html
 
+" https://github.com/elixir-editors/vim-elixir/issues/562#issuecomment-1092331491
+au BufRead,BufNewFile *.ex,*.exs set filetype=elixir
+au BufRead,BufNewFile *.eex,*.heex,*.leex,*.sface,*.lexs set filetype=eelixir
+au BufRead,BufNewFile mix.lock set filetype=elixir
+
 colorscheme Tomorrow-Night
 
 let mapleader=","               " set leader key to comma
 let g:ackprg = 'rg --vimgrep'
 let g:ale_linters = {'ruby': ['standardrb']}
+
+" https://github.com/mhinz/vim-mix-format/pull/43#issuecomment-1148609072
 let g:ale_fixers = {
 \  '*': ['remove_trailing_lines', 'trim_whitespace'],
 \  'ruby': ['standardrb','rubocop'],
+\  'elixir': ['mix_format'],
+\  'eelixir': ['mix_format'],
 \}
-let g:ale_fix_on_save = 0
-let g:mix_format_on_save = 1
+let g:ale_fix_on_save = 1
+
 let g:ctrlp_working_path_mode=0 " don't manage working directory
 let g:ctrlp_jump_to_buffer=0    " disable jumping to already open buffer
 let g:gist_clip_command='pbcopy'     " gist-vim: set clipboard command

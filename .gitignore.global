@@ -2,3 +2,4 @@
 .ruby-gemset
 .tool-versions
 /tags
+.env

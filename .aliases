@@ -1,5 +1,4 @@
 alias be='bundle exec'
-alias endurance='ssh -L 5000:localhost:5000 -L 4000:localhost:4000 bnr@endurance.local'
 alias first_and_last='sed -e 1b -e \'$!d\''
 alias gi=git
 alias gti=git
@@ -16,3 +15,6 @@ alias whitespace="sed -i '' -E 's/[[:space:]]*\$//' **/*.rb" #find ./ -type f -n
 alias start-db-tunnel="ssh -i $TUNNEL_SSH_KEY -NvL 5434:$TUNNEL_DB_SERVER:5432 $TUNNEL_EXTERNAL_SERVER"
 alias psql-tunnel="psql -h localhost -p 5433 -U $TUNNEL_DB_USER -d $TUNNEL_DB"
 alias rtw='fswatch lib test | mix test --listen-on-stdin'
+alias nas='ssh -p 2202 iamvery@home.local'
+alias calendar='python -c "import calendar; import sys; from datetime import date; print(calendar.calendar(int(sys.argv[1]) if len(sys.argv) > 1 else date.today().year))" $1'
+alias weather='curl wttr.in'
