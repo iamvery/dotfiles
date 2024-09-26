@@ -19,3 +19,7 @@ alias nas="ssh -p 2202 $HOME_USER@home.local"
 alias remote-plex="ssh -p $HOME_SSH_PORT -vNL 32400:localhost:32400 $HOME_USER@$HOME_HOST"
 alias calendar='python -c "import calendar; import sys; from datetime import date; print(calendar.calendar(int(sys.argv[1]) if len(sys.argv) > 1 else date.today().year))" $1'
 alias weather='curl wttr.in'
+alias changelog='git log --pretty=format:\"- %ad %B\" \
+                 --grep=\"^Bump\" \
+                 --invert-grep \
+                 --date=short $(git describe --tags --abbrev=0)..HEAD'
